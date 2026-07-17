@@ -1,0 +1,15 @@
+EmP Website — DRAFT PREVIEW 网站草稿预览
+========================================
+
+English:
+1. Unzip this folder anywhere on your computer.
+2. Open the file "index.html" — double-click it and it opens in your browser.
+3. Click around like a normal visitor. Nothing here is live; it is a local
+   copy for review only.
+4. Send your feedback to empboard@gmail.com.
+
+中文:
+1. 将此压缩包解压到电脑任意位置。
+2. 双击打开 "index.html" 文件，它会在浏览器中打开。
+3. 像普通访客一样点击浏览。这只是本地预览副本，不是正式网站。
+4. 请将您的反馈发送至 empboard@gmail.com。
