@@ -21,11 +21,18 @@
   </div>
 </header>
 
-<section class="hero">
+<!-- Photo banner at the top -->
+<section class="hero" style="background-image:url('hero.jpg')">
   <div class="wrap">
     <h1 class="tag">Diverse Parenting · Unified Community
       <span class="zh">多元化的育儿 · 联合化的社区</span>
     </h1>
+  </div>
+</section>
+
+<!-- Organization description, below the photo -->
+<section class="about">
+  <div class="wrap">
     <p class="mission">
       Founded in 2007, Emerald Parents Association unites Chinese families in
       the Greater Seattle area — building a healthy, supportive community,
@@ -47,24 +54,7 @@
     <p class="lead">Choose what brings you here today, and we'll take you
       straight there. 请选择您的来意，我们带您直达。</p>
 
-    <div class="toggle" role="group" aria-label="View style">
-      <button id="tDrop" class="on" onclick="setView('drop')">Dropdown 下拉</button>
-      <button id="tCard" onclick="setView('card')">Cards 卡片</button>
-    </div>
-
-    <!-- Dropdown view (as described) -->
-    <div class="dropview" id="dropview">
-      <select id="intent" aria-label="I want to">
-        <option value="" disabled selected>Select one… 请选择…</option>
-        <option value="events.html">Register for an event — 报名参加活动（参加者 / 志愿者）</option>
-        <option value="join.html">Become a member — 成为会员</option>
-        <option value="past-events.html">Learn who we are — 了解我们（浏览过往活动）</option>
-      </select>
-      <button class="go" onclick="goIntent()">Go →</button>
-    </div>
-
-    <!-- Cards view (alternative) -->
-    <div class="cardview" id="cardview" hidden>
+    <div class="cardview">
       <a class="card j1" href="events.html">
         <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
         <h3>Register for an event <span class="zh">报名参加活动</span></h3>
@@ -95,19 +85,5 @@
 </footer>
 
 <div class="draftbar">DRAFT PREVIEW 草稿预览 — proposed landing page, not the live site 这不是正式网站</div>
-
-<script>
-function setView(v){
-  document.getElementById('dropview').hidden = v!=='drop';
-  document.getElementById('cardview').hidden = v!=='card';
-  document.getElementById('tDrop').classList.toggle('on', v==='drop');
-  document.getElementById('tCard').classList.toggle('on', v==='card');
-}
-function goIntent(){
-  var v = document.getElementById('intent').value;
-  if(v) window.location.href = v;
-}
-document.getElementById('intent').addEventListener('change', goIntent);
-</script>
 </body>
 </html>
