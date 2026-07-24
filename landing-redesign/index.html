@@ -11,7 +11,7 @@
 <body>
 
 <header class="site-head">
-  <div class="wrap">
+  <div class="wrap head-top">
     <img src="emplogo.png" alt="Emerald Parents Association logo">
     <div class="name">Emerald Parents Association
       <small>翡翠父母协会 · Greater Seattle</small>
@@ -19,6 +19,55 @@
     <div class="spacer"></div>
     <div class="util">中文 / English</div>
   </div>
+  <!-- Current top-level menu, kept as-is for now (to be fine-tuned next version).
+       Links point to the existing live pages. -->
+  <nav class="topnav-wrap">
+    <div class="wrap">
+      <button class="navtoggle" onclick="document.getElementById('topnav').classList.toggle('open')">☰ Menu 菜单</button>
+      <ul class="topnav" id="topnav">
+        <li><a href="https://www.emeraldparents.org/">Home 首页</a>
+          <ul class="submenu">
+            <li><a href="https://www.emeraldparents.org/emp-activities.html">EmP Activities</a></li>
+          </ul>
+        </li>
+        <li><a href="https://www.emeraldparents.org/about-us.html">About Us 关于我们</a>
+          <ul class="submenu">
+            <li><a href="https://www.emeraldparents.org/contact-us.html">Contact Us</a></li>
+            <li><a href="https://www.emeraldparents.org/join-us.html">Join Us</a></li>
+            <li><a href="https://www.emeraldparents.org/donate.html">Donate</a></li>
+            <li><a href="https://www.emeraldparents.org/sponsorship--partners.html">Sponsorship &amp; Partners</a></li>
+            <li><a href="https://www.emeraldparents.org/emp-milestones.html">EmP Milestones</a></li>
+            <li><a href="https://www.emeraldparents.org/emp-board-members.html">EmP Board Members</a></li>
+          </ul>
+        </li>
+        <li><a href="https://www.emeraldparents.org/parents.html">Parents 父母</a>
+          <ul class="submenu">
+            <li><a href="https://www.emeraldparents.org/parents-education.html">Parents Education</a></li>
+            <li><a href="https://www.emeraldparents.org/parents-fun.html">Parents Fun</a></li>
+          </ul>
+        </li>
+        <li><a href="https://www.emeraldparents.org/youth.html">Youth 青少年</a>
+          <ul class="submenu">
+            <li><a href="https://www.emeraldparents.org/community-service.html">Community Service</a></li>
+            <li><a href="https://www.emeraldparents.org/camps--classes.html">Camps &amp; Classes</a></li>
+            <li><a href="https://www.emeraldparents.org/hackfest.html">HackFest</a></li>
+            <li><a href="https://www.emeraldparents.org/empactful-connections.html">EmPactful Connections</a></li>
+            <li><a href="https://www.emeraldparents.org/adopt-a-park.html">Adopt a Park</a></li>
+            <li><a href="https://www.emeraldparents.org/youthreview.html">Youth Review</a></li>
+            <li><a href="https://www.emeraldparents.org/gavel-club.html">Gavel Club</a></li>
+          </ul>
+        </li>
+        <li><a href="https://www.emeraldparents.org/kids--family.html">Kids &amp; Family 亲子</a>
+          <ul class="submenu">
+            <li><a href="https://www.emeraldparents.org/kids-fun.html">Kids Fun</a></li>
+            <li><a href="https://www.emeraldparents.org/family-fun.html">Family Fun</a></li>
+            <li><a href="https://www.emeraldparents.org/2622334892-jingxing-cultural-discovery-program.html">景行 Jingxing Cultural Discovery</a></li>
+            <li><a href="https://www.emeraldparents.org/study-groups.html">Study Groups</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>
 
 <!-- Photo banner at the top -->
@@ -34,16 +83,21 @@
 <section class="about">
   <div class="wrap">
     <p class="mission">
-      Founded in 2007, Emerald Parents Association unites Chinese families in
-      the Greater Seattle area — building a healthy, supportive community,
-      strengthening parenting and family values, and organizing education and
-      community activities for families, parents, and children.
-      <span class="zh">成立于2007年，翡翠父母协会（EmP）聚集大西雅图地区华人家庭，共同建设积极、健康、有力的社区，提升育儿和家庭理念，组织多样化的教育和社区活动。</span>
+      Emerald Parents Association (EmP) is a grassroots parents' group, founded
+      in 2007. Our mission is to build a strong, healthy family community for
+      Chinese families in the Greater Seattle area — to strengthen parenting and
+      family values, and to organize community activities. We share community
+      information and exchange parenting experiences. We organize education and
+      community activities for our families, our busy parents, our children, and
+      even our children's grandparents. On December 21, 2014, EmP was officially
+      registered as a nonprofit organization in Washington State. Today, EmP has
+      more than 200 association member families and maintains a mailing list of
+      over 600 general members — and she continues to grow.
+      <span class="zh">Emerald Parents Association (EmP) 是一个民间父母团体，成立于2007年，宗旨是为基于大西雅图的华人，建设健康有力的家庭社区，提升育儿和家庭观念，组织社区活动。分享社区信息，交流育儿经验。我们组织各类教育，社区活动，为我们的家庭，忙碌的父母，我们的孩子，甚而孩子们的祖父母。在2014年12月21日，EmP正式注册为华州非营利性组织。今天，EmP已经有两百多家协会会员家庭，维护一个有着超过六百的普通会员的邮件列表。她仍然在不断发展壮大之中。</span>
     </p>
     <ul class="facts">
-      <li>Seattle-area Chinese family community since 2007</li>
-      <li>Registered 501(c)(3) nonprofit</li>
-      <li>200+ member families · 1,000+ on our list</li>
+      <li>Registered 501(c)(3) nonprofit · 免税组织</li>
+      <li>Tax-deductible · Tax ID 47-3994362</li>
     </ul>
   </div>
 </section>
@@ -74,6 +128,16 @@
         <span class="arrow">Our story →</span>
       </a>
     </div>
+  </div>
+</section>
+
+<!-- Kept from the old floating pop-up banner, now a quiet on-page note -->
+<section class="sitenote">
+  <div class="wrap">
+    <span class="badge">🚀</span>
+    <span>The EmP HackFest has its own website —
+      <a href="https://emphackfest.org/" target="_blank" rel="noopener">emphackfest.org</a>.
+      EmP黑客节有独立网站。</span>
   </div>
 </section>
 

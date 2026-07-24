@@ -15,8 +15,8 @@ a{color:var(--teal)}
 .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
 
 /* header */
-.site-head{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:20}
-.site-head .wrap{display:flex;align-items:center;gap:14px;padding-top:12px;padding-bottom:12px}
+.site-head{border-bottom:1px solid var(--line);background:#fff}
+.head-top{display:flex;align-items:center;gap:14px;padding-top:12px;padding-bottom:12px}
 .site-head img{height:46px;width:auto}
 .site-head .name{font-family:var(--head);font-weight:700;color:var(--teal);
   font-size:18px;letter-spacing:-.3px;line-height:1.15}
@@ -24,6 +24,29 @@ a{color:var(--teal)}
   color:var(--muted);font-size:12px;letter-spacing:0}
 .site-head .spacer{flex:1}
 .site-head .util{font-size:13px;color:var(--muted);font-weight:600}
+
+/* top-level menu (kept from current site; fine-tune later) */
+.navtoggle{display:none}
+.topnav-wrap{border-top:1px solid var(--line);background:#fff}
+.topnav{display:flex;flex-wrap:wrap;gap:2px;list-style:none;margin:0;padding:0}
+.topnav>li{position:relative}
+.topnav>li>a{display:block;font-family:var(--head);font-weight:700;font-size:14px;
+  color:var(--teal);text-decoration:none;padding:14px 16px;letter-spacing:.2px}
+.topnav>li>a:hover,.topnav>li:hover>a{background:var(--mist)}
+.topnav .submenu{position:absolute;top:100%;left:0;min-width:210px;background:#fff;
+  border:1px solid var(--line);border-radius:0 0 10px 10px;box-shadow:0 12px 28px -14px rgba(14,67,97,.4);
+  list-style:none;margin:0;padding:6px 0;display:none;z-index:30}
+.topnav>li:hover .submenu{display:block}
+.topnav .submenu a{display:block;padding:9px 16px;font-size:14px;color:var(--ink);
+  text-decoration:none;font-weight:600}
+.topnav .submenu a:hover{background:var(--mist);color:var(--teal)}
+
+/* kept HackFest note (replaces the old floating banner) */
+.sitenote{background:var(--mist);border-top:1px solid var(--line)}
+.sitenote .wrap{display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  padding-top:16px;padding-bottom:16px;font-size:14.5px;color:var(--ink)}
+.sitenote .badge{font-size:20px}
+.sitenote a{font-weight:700;color:var(--teal)}
 
 /* hero — photo banner at the top with tagline overlaid */
 .hero{position:relative;min-height:clamp(320px,46vw,520px);display:flex;
@@ -116,5 +139,12 @@ a{color:var(--teal)}
 
 @media(max-width:760px){
   .cardview{grid-template-columns:1fr}
-  .hero{padding:38px 0 44px}
+  .navtoggle{display:block;border:0;background:none;font-family:var(--head);
+    font-weight:700;font-size:14px;color:var(--teal);padding:12px 0;cursor:pointer;width:100%;text-align:left}
+  .topnav{display:none;flex-direction:column;padding-bottom:8px}
+  .topnav.open{display:flex}
+  .topnav>li>a{padding:11px 4px}
+  .topnav .submenu{position:static;display:block;border:0;box-shadow:none;
+    padding:0 0 6px 16px;min-width:0}
+  .topnav .submenu a{padding:6px 4px;color:var(--muted)}
 }
