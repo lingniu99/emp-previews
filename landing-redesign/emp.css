@@ -160,6 +160,11 @@ a{color:var(--teal)}
 .btn.primary:hover{background:var(--teal-dark)}
 .btn.ghost{background:#fff;color:var(--teal);border:2px solid var(--teal)}
 .btn.ghost:hover{background:var(--mist)}
+/* EmP mascot strip — very wide (4.6:1); scrolls sideways on narrow screens
+   so the characters stay big enough to enjoy */
+.mascots{margin:0 0 30px;padding:0;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.mascots img{display:block;width:100%;min-width:660px;height:auto}
+
 .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
 .tile{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;
   display:block;text-decoration:none;color:inherit;
