@@ -103,6 +103,9 @@ a{color:var(--teal)}
 .board .roles .role{display:block;font-family:var(--head);font-weight:700;
   font-size:13px;color:var(--amber);text-transform:uppercase;letter-spacing:.5px;
   margin-bottom:3px}
+/* CJK ignores uppercase; drop the tracking so the Chinese doesn't read loose */
+.board .roles .role .zh{font-family:var(--sans);font-size:13.5px;
+  letter-spacing:0;font-weight:700}
 .board .roles .who{font-size:15.5px;color:var(--ink);font-weight:600}
 
 /* selector section */
