@@ -230,9 +230,13 @@
   document.getElementById('next').onclick = function(){ show(i + 1); reset(); };
   document.getElementById('prev').onclick = function(){ show(i - 1); reset(); };
 
-  var c = document.getElementById('carousel');
-  c.addEventListener('mouseenter', function(){ clearInterval(timer); });
-  c.addEventListener('mouseleave', reset);
+  // Keep playing by default wherever the cursor rests. Pause only while the
+  // pointer is on the controls, so clicking an arrow/dot isn't a moving target.
+  ['prev','next','dots'].forEach(function(id){
+    var el = document.getElementById(id);
+    el.addEventListener('mouseenter', function(){ clearInterval(timer); });
+    el.addEventListener('mouseleave', reset);
+  });
   reset();
 })();
 </script>
