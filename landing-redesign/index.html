@@ -14,10 +14,9 @@
   <div class="wrap head-top">
     <img src="emplogo.png" alt="Emerald Parents Association logo">
     <div class="name">Emerald Parents Association
-      <small>翡翠父母协会 · Greater Seattle</small>
+      <small>Greater Seattle</small>
     </div>
     <div class="spacer"></div>
-    <div class="util">中文 / English</div>
   </div>
   <!-- Current top-level menu, kept as-is for now (to be fine-tuned next version).
        Links point to the existing live pages. -->
@@ -50,10 +49,10 @@
           <ul class="submenu">
             <li><a href="https://www.emeraldparents.org/community-service.html">Community Service</a></li>
             <li><a href="https://www.emeraldparents.org/camps--classes.html">Camps &amp; Classes</a></li>
-            <li><a href="https://www.emeraldparents.org/hackfest.html">HackFest</a></li>
+            <li><a href="https://www.emeraldparents.org/hackfest">HackFest</a></li>
             <li><a href="https://www.emeraldparents.org/empactful-connections.html">EmPactful Connections</a></li>
             <li><a href="https://www.emeraldparents.org/adopt-a-park.html">Adopt a Park</a></li>
-            <li><a href="https://www.emeraldparents.org/youthreview.html">Youth Review</a></li>
+            <li><a href="https://www.emeraldparents.org/youthreview">Youth Review</a></li>
             <li><a href="https://www.emeraldparents.org/gavel-club.html">Gavel Club</a></li>
           </ul>
         </li>
@@ -61,7 +60,7 @@
           <ul class="submenu">
             <li><a href="https://www.emeraldparents.org/kids-fun.html">Kids Fun</a></li>
             <li><a href="https://www.emeraldparents.org/family-fun.html">Family Fun</a></li>
-            <li><a href="https://www.emeraldparents.org/2622334892-jingxing-cultural-discovery-program.html">景行 Jingxing Cultural Discovery</a></li>
+            <li><a href="https://www.emeraldparents.org/2622334892-jingxing-cultural-discovery-program">景行 Jingxing Cultural Discovery</a></li>
             <li><a href="https://www.emeraldparents.org/study-groups.html">Study Groups</a></li>
           </ul>
         </li>
@@ -102,6 +101,19 @@
   </div>
 </section>
 
+<!-- Rolling picture, kept from the current landing page -->
+<section class="roll">
+  <div class="wrap">
+    <div class="carousel" id="carousel" aria-roledescription="carousel"
+         aria-label="EmP community moments 社区活动剪影">
+      <div class="track" id="track"></div>
+      <button class="nav prev" id="prev" aria-label="Previous slide 上一张">‹</button>
+      <button class="nav next" id="next" aria-label="Next slide 下一张">›</button>
+      <div class="dots" id="dots"></div>
+    </div>
+  </div>
+</section>
+
 <section class="choose">
   <div class="wrap">
     <h2>I want to… <span class="zh">我想要…</span></h2>
@@ -109,13 +121,13 @@
       straight there. 请选择您的来意，我们带您直达。</p>
 
     <div class="cardview">
-      <a class="card j1" href="events.html">
+      <a class="card j1" href="https://www.emeraldparents.org/emp-activities.html">
         <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
         <h3>Register for an event <span class="zh">报名参加活动</span></h3>
         <p>Sign up for a current event as a participant or a volunteer.</p>
-        <span class="arrow">Current events →</span>
+        <span class="arrow">EmP Weekly Activities →</span>
       </a>
-      <a class="card j2" href="join.html">
+      <a class="card j2" href="https://www.emeraldparents.org/join-us.html">
         <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="4"/><path d="M3 21v-1a6 6 0 0 1 6-6M17 11v6M20 14h-6"/></svg></span>
         <h3>Become a member <span class="zh">成为会员</span></h3>
         <p>Join the EmP family and connect with our community.</p>
@@ -128,6 +140,24 @@
         <span class="arrow">Our story →</span>
       </a>
     </div>
+  </div>
+</section>
+
+<!-- Board members, moved onto the landing page below the three cards -->
+<section class="board">
+  <div class="wrap">
+    <h2>EmP Board Members</h2>
+    <p class="term">2025–2027</p>
+    <ul class="roles">
+      <li><span class="role">Co-President</span><span class="who">Mengfei Gao · Fang Li</span></li>
+      <li><span class="role">Secretary</span><span class="who">Hui Jin</span></li>
+      <li><span class="role">Co-VP Program</span><span class="who">Mei Jin · Nannan Zhang · Sandy Zhang · Ling Niu</span></li>
+      <li><span class="role">VP Membership</span><span class="who">Ruirui Wang</span></li>
+      <li><span class="role">VP Volunteer</span><span class="who">Xiao Chen</span></li>
+      <li><span class="role">VP Finance</span><span class="who">Junmin Zhang</span></li>
+      <li><span class="role">VP Outreach</span><span class="who">Bev Ni</span></li>
+      <li><span class="role">VP Youth Program</span><span class="who">Xia Li</span></li>
+    </ul>
   </div>
 </section>
 
@@ -149,5 +179,62 @@
 </footer>
 
 <div class="draftbar">DRAFT PREVIEW 草稿预览 — proposed landing page, not the live site 这不是正式网站</div>
+
+<script>
+// Rolling picture — same images as the current site's slideshow.
+(function(){
+  var files = [
+    "2025-spring-festival_orig.jpg",
+    "2024-11-10_orig.jpg",
+    "2024-10-haloween-pumpkin-carving-and-sugar-cookie-making_orig.jpeg",
+    "2024-10-seminar_orig.png",
+    "kingcounty-grant_orig.jpg",
+    "2024-10-1_orig.jpeg",
+    "2024-10-5dad-s-out_orig.jpeg",
+    "2024-9hackathon_orig.jpeg",
+    "2024-6_orig.jpg",
+    "2024-6graduatesparty_orig.jpeg",
+    "2024-5_orig.jpeg",
+    "2024_orig.jpeg",
+    "2023christmas_orig.jpeg"
+  ];
+  var track = document.getElementById('track'),
+      dots  = document.getElementById('dots'),
+      i = 0, timer;
+
+  files.forEach(function(f, n){
+    var d = document.createElement('div');
+    d.className = 'slide' + (n === 0 ? ' on' : '');
+    var img = document.createElement('img');
+    img.src = 'slides/' + f;
+    img.alt = 'EmP community moment ' + (n + 1);
+    img.loading = n === 0 ? 'eager' : 'lazy';
+    d.appendChild(img);
+    track.appendChild(d);
+
+    var b = document.createElement('button');
+    b.setAttribute('aria-label', 'Go to slide ' + (n + 1));
+    if (n === 0) b.className = 'on';
+    b.onclick = function(){ show(n); reset(); };
+    dots.appendChild(b);
+  });
+
+  function show(n){
+    var slides = track.children, btns = dots.children;
+    slides[i].classList.remove('on'); btns[i].classList.remove('on');
+    i = (n + files.length) % files.length;
+    slides[i].classList.add('on'); btns[i].classList.add('on');
+  }
+  function reset(){ clearInterval(timer); timer = setInterval(function(){ show(i + 1); }, 5000); }
+
+  document.getElementById('next').onclick = function(){ show(i + 1); reset(); };
+  document.getElementById('prev').onclick = function(){ show(i - 1); reset(); };
+
+  var c = document.getElementById('carousel');
+  c.addEventListener('mouseenter', function(){ clearInterval(timer); });
+  c.addEventListener('mouseleave', reset);
+  reset();
+})();
+</script>
 </body>
 </html>

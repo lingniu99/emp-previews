@@ -23,7 +23,6 @@ a{color:var(--teal)}
 .site-head .name small{display:block;font-family:var(--sans);font-weight:600;
   color:var(--muted);font-size:12px;letter-spacing:0}
 .site-head .spacer{flex:1}
-.site-head .util{font-size:13px;color:var(--muted);font-weight:600}
 
 /* top-level menu (kept from current site; fine-tune later) */
 .navtoggle{display:none}
@@ -69,6 +68,42 @@ a{color:var(--teal)}
 .about .facts li{display:flex;align-items:center;gap:7px}
 .about .facts li::before{content:"";width:6px;height:6px;border-radius:50%;
   background:var(--green);display:inline-block}
+
+/* rolling picture (carousel) — between description and the three cards */
+.roll{padding:14px 0 40px;background:#fff}
+.carousel{position:relative;border-radius:16px;overflow:hidden;background:#0a3247;
+  aspect-ratio:16/9}
+.carousel .track{position:absolute;inset:0}
+.carousel .slide{position:absolute;inset:0;opacity:0;transition:opacity .6s ease;
+  display:grid;place-items:center}
+.carousel .slide.on{opacity:1}
+.carousel .slide img{width:100%;height:100%;object-fit:contain}
+.carousel .nav{position:absolute;top:50%;transform:translateY(-50%);border:0;
+  background:rgba(255,255,255,.86);color:var(--teal);width:42px;height:42px;
+  border-radius:50%;font-size:20px;font-weight:700;cursor:pointer;display:grid;
+  place-items:center;line-height:1;z-index:2}
+.carousel .nav:hover{background:#fff}
+.carousel .prev{left:12px}
+.carousel .next{right:12px}
+.carousel .dots{position:absolute;bottom:12px;left:0;right:0;display:flex;
+  justify-content:center;gap:7px;z-index:2}
+.carousel .dots button{width:9px;height:9px;padding:0;border:0;border-radius:50%;
+  background:rgba(255,255,255,.5);cursor:pointer}
+.carousel .dots button.on{background:#fff;transform:scale(1.25)}
+
+/* board members — below the three cards */
+.board{padding:44px 0 52px;background:#fff;border-top:1px solid var(--line)}
+.board h2{font-family:var(--head);font-weight:700;font-size:24px;margin:0 0 4px;
+  color:var(--teal);letter-spacing:-.4px}
+.board .term{color:var(--muted);margin:0 0 24px;font-size:15px;font-weight:600}
+.board .roles{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));
+  gap:16px;list-style:none;margin:0;padding:0}
+.board .roles li{border:1px solid var(--line);border-radius:12px;padding:15px 18px;
+  background:var(--mist)}
+.board .roles .role{display:block;font-family:var(--head);font-weight:700;
+  font-size:13px;color:var(--amber);text-transform:uppercase;letter-spacing:.5px;
+  margin-bottom:3px}
+.board .roles .who{font-size:15.5px;color:var(--ink);font-weight:600}
 
 /* selector section */
 .choose{padding:46px 0 10px;background:var(--mist)}
@@ -123,7 +158,11 @@ a{color:var(--teal)}
 .btn.ghost{background:#fff;color:var(--teal);border:2px solid var(--teal)}
 .btn.ghost:hover{background:var(--mist)}
 .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
-.tile{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+.tile{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;
+  display:block;text-decoration:none;color:inherit;
+  transition:transform .12s ease,box-shadow .12s ease,border-color .12s ease}
+a.tile:hover{transform:translateY(-3px);border-color:var(--teal);
+  box-shadow:0 12px 26px -18px rgba(14,67,97,.55)}
 .tile .body{padding:16px 18px}
 .tile .yr{font-family:var(--head);font-weight:700;color:var(--amber);font-size:13px}
 .tile h3{font-family:var(--head);margin:2px 0 4px;color:var(--teal);font-size:17px}
@@ -139,6 +178,8 @@ a{color:var(--teal)}
 
 @media(max-width:760px){
   .cardview{grid-template-columns:1fr}
+  .carousel{aspect-ratio:4/3}
+  .carousel .nav{width:34px;height:34px;font-size:17px}
   .navtoggle{display:block;border:0;background:none;font-family:var(--head);
     font-weight:700;font-size:14px;color:var(--teal);padding:12px 0;cursor:pointer;width:100%;text-align:left}
   .topnav{display:none;flex-direction:column;padding-bottom:8px}
