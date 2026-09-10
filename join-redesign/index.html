@@ -1,10 +1,11 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Join Us — proposed</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Catamaran:wght@400;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Catamaran:wght@400;600;700&family=Lora:wght@400;500;600&family=Vollkorn:wght@600;700&display=swap" rel="stylesheet">
 <style>body{margin:0;font-family:"Catamaran",sans-serif;background:#fff;color:#1f2933}
 .sect{padding:38px 22px}.inner{max-width:1080px;margin:0 auto}
-h1{font-family:Vollkorn,Georgia,serif;font-size:37px;color:#0e4361;margin:0 0 10px}
-/* the live page's welcome paragraphs, reproduced so the match can be judged */
+/* the live page's own H2 and welcome paragraphs, reproduced for comparison */
+h1{font-family:Vollkorn,Georgia,serif;font-weight:700;font-size:37px;line-height:46.25px;
+color:#0e4361;margin:0 0 10px}
 .intro{color:#2a2a2a;font-family:Lora,Georgia,serif;font-size:16px;font-weight:500;
 line-height:28px;margin:0 0 8px}
 .introwrap{margin:0 0 26px}
@@ -73,9 +74,10 @@ padding:6px 10px;font:600 13.5px/1.4 Catamaran,sans-serif;z-index:99}</style></h
 
 <div class="emp-join">
 
-  <!-- These two lines deliberately match the page's existing welcome
-       paragraphs: Lora 16px / 28px, weight 500, #2a2a2a. -->
-  <div style="font-family:Lora,Georgia,serif !important;font-size:16px !important;font-weight:500 !important;line-height:28px !important;color:#2a2a2a !important;margin:0 !important">Two ways to belong 两种会员方式</div>
+  <!-- Heading uses the page's own heading font (Vollkorn 700 teal, as the
+       "Join Us" title does) at a smaller size so it sits below it.
+       The line under it matches the welcome paragraphs: Lora 16px/28px. -->
+  <div style="font-family:Vollkorn,Georgia,serif !important;font-size:24px !important;font-weight:700 !important;line-height:30px !important;color:#0e4361 !important;margin:0 0 2px !important">Two ways to belong <span style="font-family:Lora,Georgia,serif !important;font-size:17px !important;font-weight:600 !important;color:#5b6b78 !important">两种会员方式</span></div>
   <div style="font-family:Lora,Georgia,serif !important;font-size:16px !important;font-weight:500 !important;line-height:28px !important;color:#2a2a2a !important;margin:0 0 24px !important">Everyone starts as a General Member &mdash; it&rsquo;s free. 每位新朋友都从免费的普通会员开始。</div>
 
   <div class="emp-tiers">
