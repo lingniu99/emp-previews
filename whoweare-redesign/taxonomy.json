@@ -1,0 +1,254 @@
+{
+  "_readme": [
+    "Edit this file, then run: python3 scripts/build_whoweare.py",
+    "It regenerates every HTML page in drafts/whoweare-redesign/.",
+    "'images' / 'videos' = how many empty placeholder slots that block gets.",
+    "'source' = the existing live page the material came from (shown as an",
+    "archive link). Set it to null to hide that link."
+  ],
+
+  "page": {
+    "title": "Who We Are",
+    "title_zh": "了解我们",
+    "intro": "A grassroots parenting community since 2007, run entirely by volunteer families. Everything below is something our members organise themselves.",
+    "intro_zh": "自2007年起的民间父母社区，完全由义工家庭运营。以下每一项活动，都由会员自己组织。",
+    "mascot": "https://www.emeraldparents.org/uploads/5/5/5/1/55510023/mascot-1line-narrow-small_orig.jpeg"
+  },
+
+  "categories": [
+    {
+      "slug": "learning-enrichment",
+      "title": "Learning & Enrichment",
+      "title_zh": "学习成长",
+      "kicker": "For parents and kids",
+      "intro": "Talks, camps and study groups run by our own families. Most of what we know, we teach each other.",
+      "intro_zh": "由我们自己的家庭主办的讲座、营队与学习小组。我们的知识，多半来自彼此。",
+      "subcategories": [
+        {
+          "slug": "parent-talks",
+          "title": "Parent Education Talks",
+          "title_zh": "家长讲座",
+          "kicker": "~20 talks",
+          "summary": "Parents teaching parents — admissions, safety, and practical life.",
+          "description": "Parents teaching parents. Around twenty talks so far, covering college and high-school admissions, personal safety with the Bellevue Police Department, and practical life topics such as home renovation, recycling and family travel. Talks are usually given by a member who knows the subject first-hand.",
+          "description_zh": "由家长主讲、为家长而办的讲座。迄今已举办约二十场，内容涵盖升学申请、与贝尔维尤警局合作的安全讲座，以及装修、回收、家庭旅行等生活实用话题。主讲人通常是亲身了解该主题的会员。",
+          "source": "https://www.emeraldparents.org/parents-education.html",
+          "images": 4,
+          "videos": 1
+        },
+        {
+          "slug": "camps-classes",
+          "title": "Camps & Classes",
+          "title_zh": "夏令营与课程",
+          "kicker": "Youth-led",
+          "summary": "Summer camps designed and taught by EmP teenagers.",
+          "description": "Summer camps and classes designed and taught by EmP teenagers, including a ten-week camp run with the Salvation Army. Past sessions have covered Python, drama, soccer and robotics. Teens propose the camp, recruit their own team, and run it — parents handle logistics only.",
+          "description_zh": "由协会青少年自己设计与教学的夏令营和课程，包括与救世军合作的十周营队。往期内容涵盖 Python、戏剧、足球与机器人。营队由青少年自己提案、组队并主办，家长只负责后勤。",
+          "source": "https://www.emeraldparents.org/camps--classes.html",
+          "images": 4,
+          "videos": 1
+        },
+        {
+          "slug": "study-groups",
+          "title": "Study Groups",
+          "title_zh": "学习小组",
+          "kicker": "Small & regular",
+          "summary": "Raz-Kids reading and a K–5 Math Challenge.",
+          "description": "Small, parent-organised groups that meet regularly: a Raz-Kids reading group and a K–5 Math Challenge. Groups form when a few families want the same thing, so the line-up changes from year to year.",
+          "description_zh": "家长自发组织、定期聚会的小型学习小组：Raz-Kids 阅读小组与 K–5 数学挑战。小组通常由几个需求相同的家庭发起，因此每年的项目会有所不同。",
+          "source": "https://www.emeraldparents.org/study-groups.html",
+          "images": 3,
+          "videos": 0
+        }
+      ]
+    },
+
+    {
+      "slug": "youth-leadership",
+      "title": "Youth Leadership",
+      "title_zh": "青少年领导力",
+      "kicker": "Run by the kids",
+      "intro": "Programmes where the young people are genuinely in charge — they organise, teach, edit and lead, and parents stay in the background.",
+      "intro_zh": "真正由青少年主导的项目：他们组织、教学、编辑与带领，家长退居幕后。",
+      "subcategories": [
+        {
+          "slug": "hackfest",
+          "title": "HackFest",
+          "title_zh": "黑客节",
+          "kicker": "11 events since 2021",
+          "summary": "Twice-yearly hackathon with its own website.",
+          "description": "Eleven hackathons since January 2021, now held twice a year. Youth teams build a project around a theme and present it to judges; the most recent, SafeHack, ran at DigiPen in September 2026. HackFest has grown large enough to have its own website, Discord and Instagram.",
+          "description_zh": "自2021年1月起已举办十一届，目前每年两次。青少年组队围绕主题开发项目并向评委展示；最近一届 SafeHack 于2026年9月在 DigiPen 举行。黑客节规模已大到拥有自己的网站、Discord 与 Instagram。",
+          "source": "https://www.emphackfest.org/",
+          "source_label": "Visit emphackfest.org",
+          "images": 4,
+          "videos": 1
+        },
+        {
+          "slug": "gavel-club",
+          "title": "Gavel Club",
+          "title_zh": "演讲俱乐部",
+          "kicker": "Weekly, ages 10–17",
+          "summary": "Rising Speakers — members run the meetings themselves.",
+          "description": "Rising Speakers Gavel Club meets weekly for ages 10 to 17. Members chair the meetings themselves, give prepared and impromptu speeches, and evaluate one another. It is one of the few EmP programmes that runs all year round.",
+          "description_zh": "Rising Speakers 演讲俱乐部每周聚会一次，面向10至17岁。会员自主主持会议，进行备稿与即兴演讲，并互相点评。这是协会少数全年不间断的项目之一。",
+          "source": "https://www.emeraldparents.org/gavel-club.html",
+          "images": 3,
+          "videos": 1
+        },
+        {
+          "slug": "writing-arts",
+          "title": "Writing & Creative Arts",
+          "title_zh": "写作与才艺",
+          "kicker": "Two youth-run clubs",
+          "summary": "Youth Review, plus the dance and instrument club.",
+          "description": "Two clubs where the members make the work and run the club themselves.",
+          "description_zh": "两个由青少年自己创作、自己运营的社团。",
+          "source": null,
+          "blocks": [
+            {
+              "title": "Youth Review",
+              "title_zh": "青少年评论",
+              "description": "A youth writing and art publication with 28 series to date, plus writing contests with cash prizes. Submissions come from elementary through high school, and the editorial work is done by student volunteers.",
+              "description_zh": "青少年写作与艺术刊物，已发表28个系列，并举办有奖征文。投稿来自小学到高中各年龄段，编辑工作全部由学生义工完成。",
+              "source": "https://www.emeraldparents.org/youthreview",
+              "images": 3,
+              "videos": 0
+            },
+            {
+              "title": "Youth Dance & Instrument Club",
+              "title_zh": "舞蹈与器乐社",
+              "note": "New page. The dance half below is drawn from the current weekly-activities announcement.",
+              "description": "EmP 舞蹈社 runs a Saturday morning workshop series taught by EmP teenagers — ballet, K-pop, jazz and modern, and Chinese dance, for ages four and up. Sessions are small, no experience is needed, and the aim is to help a child find the style that suits them before committing to outside classes.",
+              "description_zh": "EmP舞蹈社每周六上午开设体验系列课程，由协会青少年小老师授课，涵盖芭蕾、K-pop、爵士与现代舞、中国舞，适合4岁以上。小班教学、零基础即可参加，目的是帮助孩子在报名校外课程前找到适合自己的舞种。",
+              "todo": "Instrument group 器乐社 — write a short description here. Who leads it, how often it meets, what ages, and what the group actually does.",
+              "source": "https://www.emeraldparents.org/emp-activities.html",
+              "source_label": "Current schedule on EmP Weekly Activities",
+              "images": 4,
+              "videos": 2
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "community-service",
+      "title": "Community Service",
+      "title_zh": "社区服务",
+      "kicker": "Giving back",
+      "intro": "How we give back to Greater Seattle — the parks, our neighbours, and families who need a hand.",
+      "intro_zh": "我们回馈大西雅图社区的方式：公园、邻里，以及需要帮助的家庭。",
+      "subcategories": [
+        {
+          "slug": "adopt-a-park",
+          "title": "Adopt-a-Park",
+          "title_zh": "公园养护",
+          "kicker": "Since 2014",
+          "summary": "Juanita Woodlands and other King County parks.",
+          "description": "EmP families adopted Juanita Woodlands in 2014 and maintained it through 2023; we now work in other King County parks as well. Work parties run several times a year — clearing invasive plants, spreading mulch and planting. Younger children are welcome and the hours count toward school service requirements.",
+          "description_zh": "协会家庭于2014年认养 Juanita Woodlands 并维护至2023年，如今也在金郡其他公园服务。每年举办数次劳动日：清除入侵植物、铺覆盖物与种植。欢迎低龄儿童参加，服务时数可计入学校要求。",
+          "source": "https://www.emeraldparents.org/adopt-a-park.html",
+          "images": 4,
+          "videos": 0
+        },
+        {
+          "slug": "empactful-connections",
+          "title": "EmPactful Connections",
+          "title_zh": "特殊儿童陪伴",
+          "kicker": "Ongoing",
+          "summary": "Youth volunteers with the autism community.",
+          "description": "An ongoing partnership with International Buddy. EmP youth volunteers spend time with children in the autism community and help them train for Special Olympics events. It is a commitment rather than a one-off — the same volunteers return, so the friendships last.",
+          "description_zh": "与 International Buddy 的长期合作项目。协会青少年义工陪伴自闭症儿童，并协助他们为特奥会做训练。这是长期承诺而非一次性活动——同一批义工持续参与，友谊得以延续。",
+          "source": "https://www.emeraldparents.org/empactful-connections.html",
+          "images": 3,
+          "videos": 1
+        },
+        {
+          "slug": "service-projects",
+          "title": "Service Projects",
+          "title_zh": "服务项目",
+          "kicker": "Family-initiated",
+          "summary": "Shelter blankets, bike recycling, meals, food forest.",
+          "description": "One-off and seasonal projects, chosen and led by the families who propose them: blankets for an animal shelter, bicycle recycling, cooking meals at the Ronald McDonald House, and work at the Beacon Hill Food Forest. Volunteer hours accumulate toward the President's Volunteer Service Award, which several of our youth members have received.",
+          "description_zh": "由提案家庭自主选择与带领的单次或季节性项目：为动物收容所制作猫毯、旧自行车回收、在麦当劳之家做饭，以及 Beacon Hill Food Forest 的园艺工作。义工时数可累计申请总统义工服务奖，协会已有多位青少年会员获奖。",
+          "source": "https://www.emeraldparents.org/community-service.html",
+          "images": 4,
+          "videos": 1
+        }
+      ]
+    },
+
+    {
+      "slug": "culture-celebration",
+      "title": "Culture & Celebration",
+      "title_zh": "文化与联谊",
+      "kicker": "Where we become a community",
+      "intro": "The festivals, the traditions and the friendships that keep families coming back year after year.",
+      "intro_zh": "节庆、传统与友情——让家庭年复一年回来的理由。",
+      "subcategories": [
+        {
+          "slug": "jingxing",
+          "title": "景行 Jingxing",
+          "title_zh": "文化探索",
+          "kicker": "Cultural Discovery",
+          "summary": "Exploring Chinese culture through student writing.",
+          "description": "The Jingxing Cultural Discovery Program invites students to explore Chinese culture through their own writing. It runs essay contests, publishes the students' work, and is edited by a team of youth volunteers — so the culture is discovered by the children rather than explained to them.",
+          "description_zh": "景行文化探索项目邀请学生以自己的写作探索中华文化。项目举办征文比赛、发表学生作品，并由青少年编辑团队负责编辑——文化由孩子自己去发现，而不是被讲授。",
+          "source": "https://www.emeraldparents.org/2622334892-jingxing-cultural-discovery-program.html",
+          "images": 4,
+          "videos": 0
+        },
+        {
+          "slug": "family-traditions",
+          "title": "Family Traditions",
+          "title_zh": "家庭传统",
+          "kicker": "Every year",
+          "summary": "Track & Field Meet, Spring Festival, camping, graduation.",
+          "description": "The events that come back every year. The Summer Track & Field Meet each June is the biggest — 400+ participants of all ages, and the day many families first meet EmP. Alongside it are the Spring Festival gathering, group camping, and the graduation celebration for our seniors.",
+          "description_zh": "每年固定回归的活动。六月的家庭运动会规模最大——四百余人参加，老少同场，也是许多家庭第一次认识协会的场合。此外还有春节聚会、集体露营与毕业生庆祝。",
+          "source": "https://www.emeraldparents.org/family-fun.html",
+          "images": 4,
+          "videos": 1
+        },
+        {
+          "slug": "kids-seasonal",
+          "title": "Kids' Seasonal Fun",
+          "title_zh": "儿童活动",
+          "kicker": "Through the year",
+          "summary": "Halloween, Christmas crafts, game nights, 节气.",
+          "description": "Activities built around the calendar for younger children: Halloween on the Hill with the Bellevue Police Department, Christmas crafts, game nights, and a series following the twenty-four 节气 solar terms. Most are short, indoor and easy to bring a small child to.",
+          "description_zh": "跟着节令走的低龄儿童活动：与贝尔维尤警局合办的 Halloween on the Hill、圣诞手工、游戏之夜，以及二十四节气系列。多数活动时间短、在室内进行，带小小孩也很轻松。",
+          "source": "https://www.emeraldparents.org/kids-fun.html",
+          "images": 4,
+          "videos": 0
+        },
+        {
+          "slug": "parents-social",
+          "title": "Parents' Social Life",
+          "title_zh": "家长联谊",
+          "kicker": "For the grown-ups",
+          "summary": "Mom's Out, Dad's Out, and the Empty Nesters group.",
+          "description": "Time for the parents themselves. Mom's Out and Dad's Out meet through the year — hiking, ping-pong, classes, dinners — and the 空巢群 Empty Nesters group brings together families whose children have left home. Around twenty-five gatherings are on record.",
+          "description_zh": "属于家长自己的时间。Mom's Out 与 Dad's Out 全年不定期举行——爬山、乒乓、课程、聚餐；空巢群则让孩子离家的家庭重新聚在一起。已记录的聚会约有二十五次。",
+          "source": "https://www.emeraldparents.org/parents-fun.html",
+          "images": 4,
+          "videos": 0
+        }
+      ]
+    }
+  ],
+
+  "extras": {
+    "milestones": {
+      "title": "EmP Milestones",
+      "title_zh": "协会大事记",
+      "description": "Our history since 2007, year by year.",
+      "url": "https://www.emeraldparents.org/emp-milestones.html"
+    },
+    "buttons": [
+      { "label": "Donate 捐款", "url": "https://www.emeraldparents.org/donate.html", "style": "solid" },
+      { "label": "Sponsor & Partner 赞助合作", "url": "https://www.emeraldparents.org/sponsorship--partners.html", "style": "ghost" }
+    ]
+  }
+}
