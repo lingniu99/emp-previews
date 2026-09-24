@@ -60,6 +60,9 @@ h3{
 
 /* --- cards -------------------------------------------------------- */
 .cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px}
+/* the four top-level categories sit in a fixed 2x2 block */
+.cards.two-up{grid-template-columns:repeat(2,1fr)}
+@media (max-width:640px){.cards.two-up{grid-template-columns:1fr}}
 .card{
   display:block; background:#fff; border:1px solid #e3ebef; border-radius:14px;
   padding:18px 20px; text-decoration:none; color:inherit;
@@ -79,6 +82,7 @@ h3{
 }
 .card .name .zh{font-family:Catamaran,sans-serif; font-weight:600; font-size:15px; color:#5b6b78}
 .card .blurb{font-size:14px; line-height:1.55; color:#5b6b78; margin:0}
+.card .blurb-zh{font-size:13.5px; line-height:1.6; color:#5b6b78; margin:5px 0 0}
 .card .count{
   display:inline-block; margin-top:10px; font-size:12px; font-weight:600;
   color:#5b6b78; background:#f3f7f9; border-radius:999px; padding:3px 10px;
@@ -166,25 +170,21 @@ h3{
 <div class="wrap">
 <div class="crumbs"><a href="index.html">Who We Are</a><span>&rsaquo;</span>Learning &amp; Enrichment</div>
 <h1>Learning &amp; Enrichment <span class="zh">学习成长</span></h1>
-<div class="lede">Talks, camps and study groups run by our own families. Most of what we know, we teach each other.<br>由我们自己的家庭主办的讲座、营队与学习小组。我们的知识，多半来自彼此。</div>
+<div class="lede">Talks and study groups organised by the parents. Most of what we know, we teach each other.<br>由家长组织的讲座与学习小组。我们所知道的，大多来自彼此。</div>
 <div class="cards">
 
     <a class="card" href="learning-enrichment-parent-talks.html">
       <div class="kicker">~20 talks</div>
       <div class="name">Parent Education Talks <span class="zh">家长讲座</span></div>
       <div class="blurb">Parents teaching parents — admissions, safety, and practical life.</div>
-    </a>
-
-    <a class="card" href="learning-enrichment-camps-classes.html">
-      <div class="kicker">Youth-led</div>
-      <div class="name">Camps &amp; Classes <span class="zh">夏令营与课程</span></div>
-      <div class="blurb">Summer camps designed and taught by EmP teenagers.</div>
+      <div class="blurb-zh">家长教家长：升学、安全与生活实用话题。</div>
     </a>
 
     <a class="card" href="learning-enrichment-study-groups.html">
       <div class="kicker">Running now</div>
       <div class="name">Study Groups <span class="zh">学习小组</span></div>
       <div class="blurb">Raz-Kids reading and the K–5 Math Challenge.</div>
+      <div class="blurb-zh">Raz-Kids 阅读与 K–5 数学挑战。</div>
     </a>
 </div>
 <div class="btns"><a class="btn btn-ghost" href="index.html">&larr; Back to Who We Are</a></div>

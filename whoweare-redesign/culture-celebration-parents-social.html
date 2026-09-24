@@ -60,6 +60,9 @@ h3{
 
 /* --- cards -------------------------------------------------------- */
 .cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px}
+/* the four top-level categories sit in a fixed 2x2 block */
+.cards.two-up{grid-template-columns:repeat(2,1fr)}
+@media (max-width:640px){.cards.two-up{grid-template-columns:1fr}}
 .card{
   display:block; background:#fff; border:1px solid #e3ebef; border-radius:14px;
   padding:18px 20px; text-decoration:none; color:inherit;
@@ -79,6 +82,7 @@ h3{
 }
 .card .name .zh{font-family:Catamaran,sans-serif; font-weight:600; font-size:15px; color:#5b6b78}
 .card .blurb{font-size:14px; line-height:1.55; color:#5b6b78; margin:0}
+.card .blurb-zh{font-size:13.5px; line-height:1.6; color:#5b6b78; margin:5px 0 0}
 .card .count{
   display:inline-block; margin-top:10px; font-size:12px; font-weight:600;
   color:#5b6b78; background:#f3f7f9; border-radius:999px; padding:3px 10px;
@@ -166,12 +170,12 @@ h3{
 <div class="wrap">
 <div class="crumbs"><a href="index.html">Who We Are</a><span>&rsaquo;</span><a href="culture-celebration.html">Culture &amp; Celebration</a><span>&rsaquo;</span>Parents&#x27; Social Life</div>
 <h1>Parents&#x27; Social Life <span class="zh">家长联谊</span></h1>
+
 <div class="body">Time for the parents themselves. Mom&#x27;s Out and Dad&#x27;s Out meet through the year — hiking, ping-pong, classes, dinners — and the 空巢群 Empty Nesters group brings together families whose children have left home. Around twenty-five gatherings are on record.</div>
 <div class="body-zh">属于家长自己的时间。Mom&#x27;s Out 与 Dad&#x27;s Out 全年不定期举行——爬山、乒乓、课程、聚餐；空巢群则让孩子离家的家庭重新聚在一起。已记录的聚会约有二十五次。</div>
 
 <div><a class="source" href="https://www.emeraldparents.org/parents-fun.html" target="_blank" rel="noopener">See the full archive</a></div>
-<h3>Photos &amp; video &mdash; Parents&#x27; Social Life</h3>
-<div class="media">
+<div class="media" style="margin-top:26px">
 
       <!-- IMAGE 1 — to fill this in, replace this whole <div class="ph ph-img"> with:
            <figure class="shot"><img src="PHOTO-URL" alt="WHAT THE PHOTO SHOWS"><figcaption>Caption 图说</figcaption></figure> -->

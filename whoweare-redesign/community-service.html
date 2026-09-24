@@ -60,6 +60,9 @@ h3{
 
 /* --- cards -------------------------------------------------------- */
 .cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px}
+/* the four top-level categories sit in a fixed 2x2 block */
+.cards.two-up{grid-template-columns:repeat(2,1fr)}
+@media (max-width:640px){.cards.two-up{grid-template-columns:1fr}}
 .card{
   display:block; background:#fff; border:1px solid #e3ebef; border-radius:14px;
   padding:18px 20px; text-decoration:none; color:inherit;
@@ -79,6 +82,7 @@ h3{
 }
 .card .name .zh{font-family:Catamaran,sans-serif; font-weight:600; font-size:15px; color:#5b6b78}
 .card .blurb{font-size:14px; line-height:1.55; color:#5b6b78; margin:0}
+.card .blurb-zh{font-size:13.5px; line-height:1.6; color:#5b6b78; margin:5px 0 0}
 .card .count{
   display:inline-block; margin-top:10px; font-size:12px; font-weight:600;
   color:#5b6b78; background:#f3f7f9; border-radius:999px; padding:3px 10px;
@@ -173,18 +177,21 @@ h3{
       <div class="kicker">Since 2014</div>
       <div class="name">Adopt-a-Park <span class="zh">公园养护</span></div>
       <div class="blurb">Juanita Woodlands and other King County parks.</div>
+      <div class="blurb-zh">Juanita Woodlands 及金郡其他公园。</div>
     </a>
 
     <a class="card" href="community-service-empactful-connections.html">
       <div class="kicker">Ongoing</div>
       <div class="name">EmPactful Connections <span class="zh">特殊儿童陪伴</span></div>
       <div class="blurb">Youth volunteers with the autism community.</div>
+      <div class="blurb-zh">青少年义工长期陪伴自闭症群体。</div>
     </a>
 
     <a class="card" href="community-service-service-projects.html">
       <div class="kicker">Family-initiated</div>
       <div class="name">Service Projects <span class="zh">服务项目</span></div>
       <div class="blurb">Shelter blankets, bike recycling, meals, food forest.</div>
+      <div class="blurb-zh">猫毯、自行车回收、爱心餐与社区菜园。</div>
     </a>
 </div>
 <div class="btns"><a class="btn btn-ghost" href="index.html">&larr; Back to Who We Are</a></div>

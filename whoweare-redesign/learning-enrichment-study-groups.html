@@ -60,6 +60,9 @@ h3{
 
 /* --- cards -------------------------------------------------------- */
 .cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px}
+/* the four top-level categories sit in a fixed 2x2 block */
+.cards.two-up{grid-template-columns:repeat(2,1fr)}
+@media (max-width:640px){.cards.two-up{grid-template-columns:1fr}}
 .card{
   display:block; background:#fff; border:1px solid #e3ebef; border-radius:14px;
   padding:18px 20px; text-decoration:none; color:inherit;
@@ -79,6 +82,7 @@ h3{
 }
 .card .name .zh{font-family:Catamaran,sans-serif; font-weight:600; font-size:15px; color:#5b6b78}
 .card .blurb{font-size:14px; line-height:1.55; color:#5b6b78; margin:0}
+.card .blurb-zh{font-size:13.5px; line-height:1.6; color:#5b6b78; margin:5px 0 0}
 .card .count{
   display:inline-block; margin-top:10px; font-size:12px; font-weight:600;
   color:#5b6b78; background:#f3f7f9; border-radius:999px; padding:3px 10px;
@@ -166,12 +170,12 @@ h3{
 <div class="wrap">
 <div class="crumbs"><a href="index.html">Who We Are</a><span>&rsaquo;</span><a href="learning-enrichment.html">Learning &amp; Enrichment</a><span>&rsaquo;</span>Study Groups</div>
 <h1>Study Groups <span class="zh">学习小组</span></h1>
+
 <div class="body">Small, parent-organised groups that meet regularly, and both are running now: a Raz-Kids reading group and the K–5 Math Challenge. Groups start when a few families want the same thing, so new ones can be proposed at any time.</div>
 <div class="body-zh">家长自发组织、定期聚会的小型学习小组，目前两个都在进行中：Raz-Kids 阅读小组与 K–5 数学挑战。小组由几个需求相同的家庭发起，随时欢迎提出新的学习小组。</div>
 
 <div><a class="source" href="https://www.emeraldparents.org/study-groups.html" target="_blank" rel="noopener">See the full archive</a></div>
-<h3>Photos &amp; video &mdash; Study Groups</h3>
-<div class="media">
+<div class="media" style="margin-top:26px">
 
       <!-- IMAGE 1 — to fill this in, replace this whole <div class="ph ph-img"> with:
            <figure class="shot"><img src="PHOTO-URL" alt="WHAT THE PHOTO SHOWS"><figcaption>Caption 图说</figcaption></figure> -->

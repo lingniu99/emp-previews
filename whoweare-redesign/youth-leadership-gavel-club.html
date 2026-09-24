@@ -60,6 +60,9 @@ h3{
 
 /* --- cards -------------------------------------------------------- */
 .cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px}
+/* the four top-level categories sit in a fixed 2x2 block */
+.cards.two-up{grid-template-columns:repeat(2,1fr)}
+@media (max-width:640px){.cards.two-up{grid-template-columns:1fr}}
 .card{
   display:block; background:#fff; border:1px solid #e3ebef; border-radius:14px;
   padding:18px 20px; text-decoration:none; color:inherit;
@@ -79,6 +82,7 @@ h3{
 }
 .card .name .zh{font-family:Catamaran,sans-serif; font-weight:600; font-size:15px; color:#5b6b78}
 .card .blurb{font-size:14px; line-height:1.55; color:#5b6b78; margin:0}
+.card .blurb-zh{font-size:13.5px; line-height:1.6; color:#5b6b78; margin:5px 0 0}
 .card .count{
   display:inline-block; margin-top:10px; font-size:12px; font-weight:600;
   color:#5b6b78; background:#f3f7f9; border-radius:999px; padding:3px 10px;
@@ -166,12 +170,12 @@ h3{
 <div class="wrap">
 <div class="crumbs"><a href="index.html">Who We Are</a><span>&rsaquo;</span><a href="youth-leadership.html">Youth Leadership</a><span>&rsaquo;</span>Gavel Club</div>
 <h1>Gavel Club <span class="zh">演讲俱乐部</span></h1>
+
 <div class="body">Rising Speakers Gavel Club meets weekly for ages 10 to 17. Members chair the meetings themselves, give prepared and impromptu speeches, and evaluate one another. It is one of the few EmP programmes that runs all year round.</div>
 <div class="body-zh">Rising Speakers 演讲俱乐部每周聚会一次，面向10至17岁。会员自主主持会议，进行备稿与即兴演讲，并互相点评。这是协会少数全年不间断的项目之一。</div>
 
 <div><a class="source" href="https://www.emeraldparents.org/gavel-club.html" target="_blank" rel="noopener">See the full archive</a></div>
-<h3>Photos &amp; video &mdash; Gavel Club</h3>
-<div class="media">
+<div class="media" style="margin-top:26px">
 
       <!-- IMAGE 1 — to fill this in, replace this whole <div class="ph ph-img"> with:
            <figure class="shot"><img src="PHOTO-URL" alt="WHAT THE PHOTO SHOWS"><figcaption>Caption 图说</figcaption></figure> -->

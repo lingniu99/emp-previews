@@ -60,6 +60,9 @@ h3{
 
 /* --- cards -------------------------------------------------------- */
 .cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px}
+/* the four top-level categories sit in a fixed 2x2 block */
+.cards.two-up{grid-template-columns:repeat(2,1fr)}
+@media (max-width:640px){.cards.two-up{grid-template-columns:1fr}}
 .card{
   display:block; background:#fff; border:1px solid #e3ebef; border-radius:14px;
   padding:18px 20px; text-decoration:none; color:inherit;
@@ -79,6 +82,7 @@ h3{
 }
 .card .name .zh{font-family:Catamaran,sans-serif; font-weight:600; font-size:15px; color:#5b6b78}
 .card .blurb{font-size:14px; line-height:1.55; color:#5b6b78; margin:0}
+.card .blurb-zh{font-size:13.5px; line-height:1.6; color:#5b6b78; margin:5px 0 0}
 .card .count{
   display:inline-block; margin-top:10px; font-size:12px; font-weight:600;
   color:#5b6b78; background:#f3f7f9; border-radius:999px; padding:3px 10px;
@@ -166,12 +170,12 @@ h3{
 <div class="wrap">
 <div class="crumbs"><a href="index.html">Who We Are</a><span>&rsaquo;</span><a href="culture-celebration.html">Culture &amp; Celebration</a><span>&rsaquo;</span>Kids&#x27; Seasonal Fun</div>
 <h1>Kids&#x27; Seasonal Fun <span class="zh">儿童活动</span></h1>
+
 <div class="body">Activities built around the calendar for younger children: Halloween on the Hill with the Bellevue Police Department, Christmas crafts, game nights, and a series following the twenty-four 节气 solar terms. Most are short, indoor and easy to bring a small child to.</div>
 <div class="body-zh">跟着节令走的低龄儿童活动：与贝尔维尤警局合办的 Halloween on the Hill、圣诞手工、游戏之夜，以及二十四节气系列。多数活动时间短、在室内进行，带小小孩也很轻松。</div>
 
 <div><a class="source" href="https://www.emeraldparents.org/kids-fun.html" target="_blank" rel="noopener">See the full archive</a></div>
-<h3>Photos &amp; video &mdash; Kids&#x27; Seasonal Fun</h3>
-<div class="media">
+<div class="media" style="margin-top:26px">
 
       <!-- IMAGE 1 — to fill this in, replace this whole <div class="ph ph-img"> with:
            <figure class="shot"><img src="PHOTO-URL" alt="WHAT THE PHOTO SHOWS"><figcaption>Caption 图说</figcaption></figure> -->

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Camps &amp; Classes — EmP prototype</title>
+<title>Spring Festival — EmP prototype</title>
 <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
 <style>
 /* Prototype stylesheet for the layered Who We Are pages.
@@ -60,6 +60,9 @@ h3{
 
 /* --- cards -------------------------------------------------------- */
 .cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px}
+/* the four top-level categories sit in a fixed 2x2 block */
+.cards.two-up{grid-template-columns:repeat(2,1fr)}
+@media (max-width:640px){.cards.two-up{grid-template-columns:1fr}}
 .card{
   display:block; background:#fff; border:1px solid #e3ebef; border-radius:14px;
   padding:18px 20px; text-decoration:none; color:inherit;
@@ -79,6 +82,7 @@ h3{
 }
 .card .name .zh{font-family:Catamaran,sans-serif; font-weight:600; font-size:15px; color:#5b6b78}
 .card .blurb{font-size:14px; line-height:1.55; color:#5b6b78; margin:0}
+.card .blurb-zh{font-size:13.5px; line-height:1.6; color:#5b6b78; margin:5px 0 0}
 .card .count{
   display:inline-block; margin-top:10px; font-size:12px; font-weight:600;
   color:#5b6b78; background:#f3f7f9; border-radius:999px; padding:3px 10px;
@@ -164,14 +168,14 @@ h3{
 <body>
 <div class="draft">DRAFT PROTOTYPE — not live. 草稿，尚未发布。</div>
 <div class="wrap">
-<div class="crumbs"><a href="index.html">Who We Are</a><span>&rsaquo;</span><a href="learning-enrichment.html">Learning &amp; Enrichment</a><span>&rsaquo;</span>Camps &amp; Classes</div>
-<h1>Camps &amp; Classes <span class="zh">夏令营与课程</span></h1>
-<div class="body">Summer camps and classes designed and taught by EmP teenagers, including a ten-week camp run with the Salvation Army. Past sessions have covered Python, drama, soccer and robotics. Teens propose the camp, recruit their own team, and run it — parents handle logistics only.</div>
-<div class="body-zh">由协会青少年自己设计与教学的夏令营和课程，包括与救世军合作的十周营队。往期内容涵盖 Python、戏剧、足球与机器人。营队由青少年自己提案、组队并主办，家长只负责后勤。</div>
+<div class="crumbs"><a href="index.html">Who We Are</a><span>&rsaquo;</span><a href="culture-celebration.html">Culture &amp; Celebration</a><span>&rsaquo;</span>Spring Festival</div>
+<h1>Spring Festival <span class="zh">春节</span></h1>
 
-<div><a class="source" href="https://www.emeraldparents.org/camps--classes.html" target="_blank" rel="noopener">See the full archive</a></div>
-<h3>Photos &amp; video &mdash; Camps &amp; Classes</h3>
-<div class="media">
+<div class="body">Our Lunar New Year celebration brings the whole community together for children&#x27;s performances, a shared meal, and the traditions families want their children to grow up with. It is the cultural anchor of the year.</div>
+<div class="body-zh">协会的农历新年庆祝活动，全社区齐聚一堂：孩子们的表演、共享的年夜饭，以及家长希望孩子传承下去的年节传统。这是我们一年中的文化重心。</div>
+
+<div><a class="source" href="https://www.emeraldparents.org/family-fun.html" target="_blank" rel="noopener">See the full archive</a></div>
+<div class="media" style="margin-top:26px">
 
       <!-- IMAGE 1 — to fill this in, replace this whole <div class="ph ph-img"> with:
            <figure class="shot"><img src="PHOTO-URL" alt="WHAT THE PHOTO SHOWS"><figcaption>Caption 图说</figcaption></figure> -->
@@ -213,7 +217,7 @@ h3{
         <div class="ph-hint">paste a YouTube or Vimeo link here</div>
       </div>
 </div>
-<div class="btns"><a class="btn btn-ghost" href="learning-enrichment.html">&larr; Back to Learning &amp; Enrichment</a></div>
+<div class="btns"><a class="btn btn-ghost" href="culture-celebration.html">&larr; Back to Culture &amp; Celebration</a></div>
 <div class="foot">Prototype for emeraldparents.org &middot; generated from taxonomy.json &middot; photos and videos are placeholders</div>
 </div>
 </body>

@@ -60,6 +60,9 @@ h3{
 
 /* --- cards -------------------------------------------------------- */
 .cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px}
+/* the four top-level categories sit in a fixed 2x2 block */
+.cards.two-up{grid-template-columns:repeat(2,1fr)}
+@media (max-width:640px){.cards.two-up{grid-template-columns:1fr}}
 .card{
   display:block; background:#fff; border:1px solid #e3ebef; border-radius:14px;
   padding:18px 20px; text-decoration:none; color:inherit;
@@ -79,6 +82,7 @@ h3{
 }
 .card .name .zh{font-family:Catamaran,sans-serif; font-weight:600; font-size:15px; color:#5b6b78}
 .card .blurb{font-size:14px; line-height:1.55; color:#5b6b78; margin:0}
+.card .blurb-zh{font-size:13.5px; line-height:1.6; color:#5b6b78; margin:5px 0 0}
 .card .count{
   display:inline-block; margin-top:10px; font-size:12px; font-weight:600;
   color:#5b6b78; background:#f3f7f9; border-radius:999px; padding:3px 10px;
@@ -166,25 +170,35 @@ h3{
 <div class="wrap">
 <div class="crumbs"><a href="index.html">Who We Are</a><span>&rsaquo;</span>Youth Leadership</div>
 <h1>Youth Leadership <span class="zh">青少年领导力</span></h1>
-<div class="lede">Programmes where the young people are genuinely in charge — they organise, teach, edit and lead, and parents stay in the background.<br>真正由青少年主导的项目：他们组织、教学、编辑与带领，家长退居幕后。</div>
+<div class="lede">Programmes the young people run themselves. They organise, teach, edit and lead; the parents stay in the background.<br>由青少年自己运营的项目。他们组织、教学、编辑与带领，家长退居幕后。</div>
 <div class="cards">
 
     <a class="card" href="youth-leadership-hackfest.html">
       <div class="kicker">11 events since 2021</div>
       <div class="name">HackFest <span class="zh">黑客节</span></div>
       <div class="blurb">Twice-yearly hackathon with its own website.</div>
+      <div class="blurb-zh">每年两届，已有独立网站的黑客松。</div>
+    </a>
+
+    <a class="card" href="youth-leadership-camps-classes.html">
+      <div class="kicker">Teens teaching kids</div>
+      <div class="name">Camps &amp; Classes <span class="zh">夏令营与课程</span></div>
+      <div class="blurb">Summer camps designed and taught by EmP teenagers.</div>
+      <div class="blurb-zh">由协会青少年自己设计并教学的夏令营。</div>
     </a>
 
     <a class="card" href="youth-leadership-gavel-club.html">
       <div class="kicker">Weekly, ages 10–17</div>
       <div class="name">Gavel Club <span class="zh">演讲俱乐部</span></div>
       <div class="blurb">Rising Speakers — members run the meetings themselves.</div>
+      <div class="blurb-zh">Rising Speakers：会员自主主持每周例会。</div>
     </a>
 
     <a class="card" href="youth-leadership-writing-arts.html">
       <div class="kicker">Two youth-run clubs</div>
       <div class="name">Writing &amp; Creative Arts <span class="zh">写作与才艺</span></div>
       <div class="blurb">Youth Review, plus the dance and instrument club.</div>
+      <div class="blurb-zh">青少年评论，以及舞蹈与器乐社。</div>
     </a>
 </div>
 <div class="btns"><a class="btn btn-ghost" href="index.html">&larr; Back to Who We Are</a></div>
