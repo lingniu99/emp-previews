@@ -52,13 +52,13 @@
           "slug": "study-groups",
           "title": "Study Groups",
           "title_zh": "学习小组",
-          "kicker": "Small & regular",
-          "summary": "Raz-Kids reading and a K–5 Math Challenge.",
-          "description": "Small, parent-organised groups that meet regularly: a Raz-Kids reading group and a K–5 Math Challenge. Groups form when a few families want the same thing, so the line-up changes from year to year.",
-          "description_zh": "家长自发组织、定期聚会的小型学习小组：Raz-Kids 阅读小组与 K–5 数学挑战。小组通常由几个需求相同的家庭发起，因此每年的项目会有所不同。",
+          "kicker": "Running now",
+          "summary": "Raz-Kids reading and the K–5 Math Challenge.",
+          "description": "Small, parent-organised groups that meet regularly, and both are running now: a Raz-Kids reading group and the K–5 Math Challenge. Groups start when a few families want the same thing, so new ones can be proposed at any time.",
+          "description_zh": "家长自发组织、定期聚会的小型学习小组，目前两个都在进行中：Raz-Kids 阅读小组与 K–5 数学挑战。小组由几个需求相同的家庭发起，随时欢迎提出新的学习小组。",
           "source": "https://www.emeraldparents.org/study-groups.html",
-          "images": 3,
-          "videos": 0
+          "images": 4,
+          "videos": 1
         }
       ]
     },
@@ -77,12 +77,13 @@
           "title_zh": "黑客节",
           "kicker": "11 events since 2021",
           "summary": "Twice-yearly hackathon with its own website.",
-          "description": "Eleven hackathons since January 2021, now held twice a year. Youth teams build a project around a theme and present it to judges; the most recent, SafeHack, ran at DigiPen in September 2026. HackFest has grown large enough to have its own website, Discord and Instagram.",
-          "description_zh": "自2021年1月起已举办十一届，目前每年两次。青少年组队围绕主题开发项目并向评委展示；最近一届 SafeHack 于2026年9月在 DigiPen 举行。黑客节规模已大到拥有自己的网站、Discord 与 Instagram。",
+          "description": "Eleven hackathons since January 2021, now held twice a year. Youth teams build a project around a theme and present it to judges; the most recent, SafeHack, ran at DigiPen in September 2026. HackFest has outgrown this site — schedules, rules, registration and past projects all live on its own website.",
+          "description_zh": "自2021年1月起已举办十一届，目前每年两次。青少年组队围绕主题开发项目并向评委展示；最近一届 SafeHack 于2026年9月在 DigiPen 举行。黑客节已发展出自己独立的网站，赛程、规则、报名与历届作品都在那里。",
           "source": "https://www.emphackfest.org/",
           "source_label": "Visit emphackfest.org",
-          "images": 4,
-          "videos": 1
+          "cta": true,
+          "images": 0,
+          "videos": 0
         },
         {
           "slug": "gavel-club",
