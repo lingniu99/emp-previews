@@ -83,9 +83,42 @@ h3{
 .card .name .zh{font-family:Catamaran,sans-serif; font-weight:600; font-size:15px; color:#5b6b78}
 .card .blurb{font-size:14px; line-height:1.55; color:#5b6b78; margin:0}
 .card .blurb-zh{font-size:13.5px; line-height:1.6; color:#5b6b78; margin:5px 0 0}
-.card .count{
-  display:inline-block; margin-top:10px; font-size:12px; font-weight:600;
-  color:#5b6b78; background:#f3f7f9; border-radius:999px; padding:3px 10px;
+/* the mascot avatar sits beside the card's words */
+.card-row{display:flex; gap:14px; align-items:flex-start}
+.card-av{
+  flex:0 0 auto; width:62px; height:62px; border-radius:50%;
+  background:#f3f7f9; border:1px solid #e3ebef; padding:4px;
+  object-fit:contain; object-position:center;
+}
+.card-txt{min-width:0}
+
+/* retired programmes: findable, deliberately quiet */
+.past-head{
+  font-family:Montserrat,sans-serif; font-weight:700; font-size:12px;
+  letter-spacing:.9px; text-transform:uppercase; color:#5b6b78;
+  margin:46px 0 0; padding-top:20px; border-top:1px solid #e3ebef;
+}
+.past-sub{font-size:13.5px; color:#5b6b78; margin:3px 0 14px}
+.past-list{display:flex; flex-wrap:wrap; gap:10px}
+.past-item{
+  display:inline-flex; align-items:center; gap:9px; text-decoration:none;
+  border:1px solid #e3ebef; border-radius:999px; padding:5px 15px 5px 6px;
+  background:#fff; color:#5b6b78;
+}
+.past-item:hover{border-color:#5b6b78; color:#0e4361}
+.past-item img{
+  width:30px; height:30px; border-radius:50%; background:#f3f7f9;
+  object-fit:contain; padding:2px; filter:grayscale(1); opacity:.75;
+}
+.past-item .n{font-family:Montserrat,sans-serif; font-weight:700; font-size:13.5px}
+.past-item .z{font-size:13px}
+
+/* banner at the top of a retired programme's own page */
+.ended{
+  display:inline-block; background:#f3f7f9; border:1px solid #e3ebef;
+  border-radius:999px; padding:5px 15px; margin:0 0 18px;
+  font-family:Montserrat,sans-serif; font-weight:700; font-size:12.5px;
+  letter-spacing:.4px; color:#5b6b78;
 }
 
 /* --- source / archive link ---------------------------------------- */

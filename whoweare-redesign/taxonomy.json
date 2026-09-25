@@ -6,9 +6,10 @@
     "'source' = the existing live page the material came from (shown as an",
     "archive link; add \"cta\": true to render it as a button instead).",
     "'note' = an amber flag on the page; 'todo' = a dashed box standing in",
-    "for copy that still has to be written."
+    "for copy that still has to be written.",
+    "'avatar' = a file in avatars/. Unassigned programmes use generic.png.",
+    "'status': 'past' moves a programme out of the main grid into the quiet 'Past programmes' list at the foot of its category page."
   ],
-
   "page": {
     "title": "Who We Are",
     "title_zh": "了解我们",
@@ -16,7 +17,6 @@
     "intro_zh": "自2007年起的民间父母社区，完全由义工家庭运营。以下每一项活动，都由会员自己组织。",
     "mascot": "https://www.emeraldparents.org/uploads/5/5/5/1/55510023/mascot-1line-narrow-small_orig.jpeg"
   },
-
   "categories": [
     {
       "slug": "learning-enrichment",
@@ -30,14 +30,15 @@
           "slug": "parent-talks",
           "title": "Parent Education Talks",
           "title_zh": "家长讲座",
-          "kicker": "~20 talks",
+          "kicker": "Running now",
           "summary": "Parents teaching parents — admissions, safety, and practical life.",
           "summary_zh": "家长教家长：升学、安全与生活实用话题。",
           "description": "Parents teaching parents. Around twenty talks so far, covering college and high-school admissions, personal safety with the Bellevue Police Department, and practical life topics such as home renovation, recycling and family travel. Talks are usually given by a member who knows the subject first-hand.",
           "description_zh": "由家长主讲、为家长而办的讲座。迄今已举办约二十场，内容涵盖升学申请、与贝尔维尤警局合作的安全讲座，以及装修、回收、家庭旅行等生活实用话题。主讲人通常是亲身了解该主题的会员。",
           "source": "https://www.emeraldparents.org/parents-education.html",
           "images": 4,
-          "videos": 1
+          "videos": 1,
+          "avatar": "generic.png"
         },
         {
           "slug": "study-groups",
@@ -50,11 +51,11 @@
           "description_zh": "家长自发组织、定期聚会的小型学习小组，目前两个都在进行中：Raz-Kids 阅读小组与 K–5 数学挑战。小组由几个需求相同的家庭发起，随时欢迎提出新的学习小组。",
           "source": "https://www.emeraldparents.org/study-groups.html",
           "images": 4,
-          "videos": 1
+          "videos": 1,
+          "avatar": "generic.png"
         }
       ]
     },
-
     {
       "slug": "youth-leadership",
       "title": "Youth Leadership",
@@ -76,7 +77,8 @@
           "source_label": "Visit emphackfest.org",
           "cta": true,
           "images": 0,
-          "videos": 0
+          "videos": 0,
+          "avatar": "generic.png"
         },
         {
           "slug": "camps-classes",
@@ -89,58 +91,59 @@
           "description_zh": "由协会青少年自己设计与教学的夏令营和课程，包括与救世军合作的十周营队。往期内容涵盖 Python、戏剧、足球与机器人。营队由青少年自己提案、组队并主办，家长只负责后勤；营员则是社区里更小的孩子。",
           "source": "https://www.emeraldparents.org/camps--classes.html",
           "images": 4,
-          "videos": 1
+          "videos": 1,
+          "avatar": "generic.png"
+        },
+        {
+          "slug": "writing",
+          "title": "Writing",
+          "title_zh": "写作",
+          "kicker": "Youth Review",
+          "summary": "A youth writing and art publication, edited by students.",
+          "summary_zh": "由学生自己编辑的青少年写作与艺术刊物。",
+          "description": "A youth writing and art publication with 28 series to date, plus writing contests with cash prizes. Submissions come from elementary through high school, and the editorial work is done by student volunteers.",
+          "description_zh": "青少年写作与艺术刊物，已发表28个系列，并举办有奖征文。投稿来自小学到高中各年龄段，编辑工作全部由学生义工完成。",
+          "source": "https://www.emeraldparents.org/youthreview",
+          "images": 4,
+          "videos": 0,
+          "avatar": "generic.png"
+        },
+        {
+          "slug": "creative-arts",
+          "title": "Creative Arts",
+          "title_zh": "才艺",
+          "kicker": "Dance & instruments",
+          "summary": "The dance club, taught by EmP teenagers, plus instruments.",
+          "summary_zh": "由协会青少年授课的舞蹈社，以及器乐社。",
+          "note": "New page. The dance half below is drawn from the current weekly-activities announcement.",
+          "description": "EmP 舞蹈社 runs a Saturday morning workshop series taught by EmP teenagers — ballet, K-pop, jazz and modern, and Chinese dance, for ages four and up. Sessions are small, no experience is needed, and the aim is to help a child find the style that suits them before committing to outside classes.",
+          "description_zh": "EmP舞蹈社每周六上午开设体验系列课程，由协会青少年小老师授课，涵盖芭蕾、K-pop、爵士与现代舞、中国舞，适合4岁以上。小班教学、零基础即可参加，目的是帮助孩子在报名校外课程前找到适合自己的舞种。",
+          "todo": "Instrument group 器乐社 — write a short description here. Who leads it, how often it meets, what ages, and what the group actually does.",
+          "source": "https://www.emeraldparents.org/emp-activities.html",
+          "source_label": "Current schedule on EmP Weekly Activities",
+          "images": 4,
+          "videos": 2,
+          "avatar": "generic.png"
         },
         {
           "slug": "gavel-club",
           "title": "Gavel Club",
           "title_zh": "演讲俱乐部",
           "kicker": "Weekly, ages 10–17",
-          "summary": "Rising Speakers — members run the meetings themselves.",
+          "summary": "Rising Speakers — members ran the meetings themselves.",
           "summary_zh": "Rising Speakers：会员自主主持每周例会。",
-          "description": "Rising Speakers Gavel Club meets weekly for ages 10 to 17. Members chair the meetings themselves, give prepared and impromptu speeches, and evaluate one another. It is one of the few EmP programmes that runs all year round.",
-          "description_zh": "Rising Speakers 演讲俱乐部每周聚会一次，面向10至17岁。会员自主主持会议，进行备稿与即兴演讲，并互相点评。这是协会少数全年不间断的项目之一。",
+          "description": "Rising Speakers Gavel Club met weekly for ages 10 to 17. Members chaired the meetings themselves, gave prepared and impromptu speeches, and evaluated one another. The club is no longer running.",
+          "description_zh": "Rising Speakers 演讲俱乐部曾每周聚会一次，面向10至17岁。会员自主主持会议，进行备稿与即兴演讲，并互相点评。该俱乐部现已停止活动。",
           "source": "https://www.emeraldparents.org/gavel-club.html",
           "images": 3,
-          "videos": 1
-        },
-        {
-          "slug": "writing-arts",
-          "title": "Writing & Creative Arts",
-          "title_zh": "写作与才艺",
-          "kicker": "Two youth-run clubs",
-          "summary": "Youth Review, plus the dance and instrument club.",
-          "summary_zh": "青少年评论，以及舞蹈与器乐社。",
-          "description": "Two clubs where the members make the work and run the club themselves.",
-          "description_zh": "两个由青少年自己创作、自己运营的社团。",
-          "source": null,
-          "blocks": [
-            {
-              "title": "Youth Review",
-              "title_zh": "青少年评论",
-              "description": "A youth writing and art publication with 28 series to date, plus writing contests with cash prizes. Submissions come from elementary through high school, and the editorial work is done by student volunteers.",
-              "description_zh": "青少年写作与艺术刊物，已发表28个系列，并举办有奖征文。投稿来自小学到高中各年龄段，编辑工作全部由学生义工完成。",
-              "source": "https://www.emeraldparents.org/youthreview",
-              "images": 3,
-              "videos": 0
-            },
-            {
-              "title": "Youth Dance & Instrument Club",
-              "title_zh": "舞蹈与器乐社",
-              "note": "New page. The dance half below is drawn from the current weekly-activities announcement.",
-              "description": "EmP 舞蹈社 runs a Saturday morning workshop series taught by EmP teenagers — ballet, K-pop, jazz and modern, and Chinese dance, for ages four and up. Sessions are small, no experience is needed, and the aim is to help a child find the style that suits them before committing to outside classes.",
-              "description_zh": "EmP舞蹈社每周六上午开设体验系列课程，由协会青少年小老师授课，涵盖芭蕾、K-pop、爵士与现代舞、中国舞，适合4岁以上。小班教学、零基础即可参加，目的是帮助孩子在报名校外课程前找到适合自己的舞种。",
-              "todo": "Instrument group 器乐社 — write a short description here. Who leads it, how often it meets, what ages, and what the group actually does.",
-              "source": "https://www.emeraldparents.org/emp-activities.html",
-              "source_label": "Current schedule on EmP Weekly Activities",
-              "images": 4,
-              "videos": 2
-            }
-          ]
+          "videos": 1,
+          "status": "past",
+          "note": "Which years did the club run? The site does not record a start or end date.",
+          "note_label": "To confirm",
+          "avatar": "generic.png"
         }
       ]
     },
-
     {
       "slug": "community-service",
       "title": "Community Service",
@@ -160,20 +163,8 @@
           "description_zh": "协会家庭于2014年认养 Juanita Woodlands 并维护至2023年，如今也在金郡其他公园服务。每年举办数次劳动日：清除入侵植物、铺覆盖物与种植。欢迎低龄儿童参加，服务时数可计入学校要求。",
           "source": "https://www.emeraldparents.org/adopt-a-park.html",
           "images": 4,
-          "videos": 0
-        },
-        {
-          "slug": "empactful-connections",
-          "title": "EmPactful Connections",
-          "title_zh": "特殊儿童陪伴",
-          "kicker": "Ongoing",
-          "summary": "Youth volunteers with the autism community.",
-          "summary_zh": "青少年义工长期陪伴自闭症群体。",
-          "description": "An ongoing partnership with International Buddy. EmP youth volunteers spend time with children in the autism community and help them train for Special Olympics events. It is a commitment rather than a one-off — the same volunteers return, so the friendships last.",
-          "description_zh": "与 International Buddy 的长期合作项目。协会青少年义工陪伴自闭症儿童，并协助他们为特奥会做训练。这是长期承诺而非一次性活动——同一批义工持续参与，友谊得以延续。",
-          "source": "https://www.emeraldparents.org/empactful-connections.html",
-          "images": 3,
-          "videos": 1
+          "videos": 0,
+          "avatar": "generic.png"
         },
         {
           "slug": "service-projects",
@@ -186,11 +177,28 @@
           "description_zh": "由提案家庭自主选择与带领的单次或季节性项目：为动物收容所制作猫毯、旧自行车回收、在麦当劳之家做饭，以及 Beacon Hill Food Forest 的园艺工作。义工时数可累计申请总统义工服务奖，协会已有多位青少年会员获奖。",
           "source": "https://www.emeraldparents.org/community-service.html",
           "images": 4,
-          "videos": 1
+          "videos": 1,
+          "avatar": "generic.png"
+        },
+        {
+          "slug": "empactful-connections",
+          "title": "EmPactful Connections",
+          "title_zh": "特殊儿童陪伴",
+          "kicker": "Ongoing",
+          "summary": "Youth volunteers with the autism community.",
+          "summary_zh": "青少年义工长期陪伴自闭症群体。",
+          "description": "A partnership with International Buddy. EmP youth volunteers spent time with children in the autism community and helped them train for Special Olympics events. The programme is no longer running.",
+          "description_zh": "与 International Buddy 的合作项目。协会青少年义工陪伴自闭症儿童，并协助他们为特奥会做训练。该项目现已结束。",
+          "source": "https://www.emeraldparents.org/empactful-connections.html",
+          "images": 3,
+          "videos": 1,
+          "avatar": "generic.png",
+          "status": "past",
+          "note": "Which years did this run? The site does not record a start or end date.",
+          "note_label": "To confirm"
         }
       ]
     },
-
     {
       "slug": "culture-celebration",
       "title": "Culture & Celebration",
@@ -210,7 +218,8 @@
           "description_zh": "协会规模最大的活动。第八届运动会于2026年举行，每年六月如期而至：四百余位男女老少参加田径、接力、拔河与家庭趣味项目。对许多家庭而言，这是他们第一次认识协会的日子。",
           "source": "https://www.emeraldparents.org/family-fun.html",
           "images": 4,
-          "videos": 1
+          "videos": 1,
+          "avatar": "track.png"
         },
         {
           "slug": "spring-festival",
@@ -223,7 +232,8 @@
           "description_zh": "协会的农历新年庆祝活动，全社区齐聚一堂：孩子们的表演、共享的年夜饭，以及家长希望孩子传承下去的年节传统。这是我们一年中的文化重心。",
           "source": "https://www.emeraldparents.org/family-fun.html",
           "images": 4,
-          "videos": 1
+          "videos": 1,
+          "avatar": "generic.png"
         },
         {
           "slug": "family-traditions",
@@ -236,7 +246,8 @@
           "description_zh": "年年延续的小传统。集体露营让家庭们一起走出城市共度周末；毕业庆祝则在每年春天为高中毕业生送行。",
           "source": "https://www.emeraldparents.org/family-fun.html",
           "images": 4,
-          "videos": 1
+          "videos": 1,
+          "avatar": "graduation.png"
         },
         {
           "slug": "jingxing",
@@ -249,7 +260,8 @@
           "description_zh": "景行文化探索项目邀请学生以自己的写作探索中华文化。项目举办征文比赛、发表学生作品，并由青少年编辑团队负责编辑——文化由孩子自己去发现，而不是被讲授。",
           "source": "https://www.emeraldparents.org/2622334892-jingxing-cultural-discovery-program.html",
           "images": 4,
-          "videos": 0
+          "videos": 0,
+          "avatar": "generic.png"
         },
         {
           "slug": "kids-seasonal",
@@ -262,7 +274,8 @@
           "description_zh": "跟着节令走的低龄儿童活动：与贝尔维尤警局合办的 Halloween on the Hill、圣诞手工、游戏之夜，以及二十四节气系列。多数活动时间短、在室内进行，带小小孩也很轻松。",
           "source": "https://www.emeraldparents.org/kids-fun.html",
           "images": 4,
-          "videos": 0
+          "videos": 0,
+          "avatar": "halloween.png"
         },
         {
           "slug": "parents-social",
@@ -275,12 +288,12 @@
           "description_zh": "属于家长自己的时间。Mom's Out 与 Dad's Out 全年不定期举行——爬山、乒乓、课程、聚餐；空巢群则让孩子离家的家庭重新聚在一起。已记录的聚会约有二十五次。",
           "source": "https://www.emeraldparents.org/parents-fun.html",
           "images": 4,
-          "videos": 0
+          "videos": 0,
+          "avatar": "mothers-day.png"
         }
       ]
     }
   ],
-
   "extras": {
     "milestones": {
       "title": "EmP Milestones",
@@ -290,8 +303,16 @@
       "url": "https://www.emeraldparents.org/emp-milestones.html"
     },
     "buttons": [
-      { "label": "Donate 捐款", "url": "https://www.emeraldparents.org/donate.html", "style": "solid" },
-      { "label": "Sponsor & Partner 赞助合作", "url": "https://www.emeraldparents.org/sponsorship--partners.html", "style": "ghost" }
+      {
+        "label": "Donate 捐款",
+        "url": "https://www.emeraldparents.org/donate.html",
+        "style": "solid"
+      },
+      {
+        "label": "Sponsor & Partner 赞助合作",
+        "url": "https://www.emeraldparents.org/sponsorship--partners.html",
+        "style": "ghost"
+      }
     ]
   }
 }

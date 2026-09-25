@@ -83,9 +83,42 @@ h3{
 .card .name .zh{font-family:Catamaran,sans-serif; font-weight:600; font-size:15px; color:#5b6b78}
 .card .blurb{font-size:14px; line-height:1.55; color:#5b6b78; margin:0}
 .card .blurb-zh{font-size:13.5px; line-height:1.6; color:#5b6b78; margin:5px 0 0}
-.card .count{
-  display:inline-block; margin-top:10px; font-size:12px; font-weight:600;
-  color:#5b6b78; background:#f3f7f9; border-radius:999px; padding:3px 10px;
+/* the mascot avatar sits beside the card's words */
+.card-row{display:flex; gap:14px; align-items:flex-start}
+.card-av{
+  flex:0 0 auto; width:62px; height:62px; border-radius:50%;
+  background:#f3f7f9; border:1px solid #e3ebef; padding:4px;
+  object-fit:contain; object-position:center;
+}
+.card-txt{min-width:0}
+
+/* retired programmes: findable, deliberately quiet */
+.past-head{
+  font-family:Montserrat,sans-serif; font-weight:700; font-size:12px;
+  letter-spacing:.9px; text-transform:uppercase; color:#5b6b78;
+  margin:46px 0 0; padding-top:20px; border-top:1px solid #e3ebef;
+}
+.past-sub{font-size:13.5px; color:#5b6b78; margin:3px 0 14px}
+.past-list{display:flex; flex-wrap:wrap; gap:10px}
+.past-item{
+  display:inline-flex; align-items:center; gap:9px; text-decoration:none;
+  border:1px solid #e3ebef; border-radius:999px; padding:5px 15px 5px 6px;
+  background:#fff; color:#5b6b78;
+}
+.past-item:hover{border-color:#5b6b78; color:#0e4361}
+.past-item img{
+  width:30px; height:30px; border-radius:50%; background:#f3f7f9;
+  object-fit:contain; padding:2px; filter:grayscale(1); opacity:.75;
+}
+.past-item .n{font-family:Montserrat,sans-serif; font-weight:700; font-size:13.5px}
+.past-item .z{font-size:13px}
+
+/* banner at the top of a retired programme's own page */
+.ended{
+  display:inline-block; background:#f3f7f9; border:1px solid #e3ebef;
+  border-radius:999px; padding:5px 15px; margin:0 0 18px;
+  font-family:Montserrat,sans-serif; font-weight:700; font-size:12.5px;
+  letter-spacing:.4px; color:#5b6b78;
 }
 
 /* --- source / archive link ---------------------------------------- */
@@ -174,25 +207,33 @@ h3{
 <div class="cards">
 
     <a class="card" href="community-service-adopt-a-park.html">
-      <div class="kicker">Since 2014</div>
-      <div class="name">Adopt-a-Park <span class="zh">公园养护</span></div>
-      <div class="blurb">Juanita Woodlands and other King County parks.</div>
-      <div class="blurb-zh">Juanita Woodlands 及金郡其他公园。</div>
-    </a>
-
-    <a class="card" href="community-service-empactful-connections.html">
-      <div class="kicker">Ongoing</div>
-      <div class="name">EmPactful Connections <span class="zh">特殊儿童陪伴</span></div>
-      <div class="blurb">Youth volunteers with the autism community.</div>
-      <div class="blurb-zh">青少年义工长期陪伴自闭症群体。</div>
+      <div class="card-row">
+        <img class="card-av" src="avatars/generic.png" alt="">
+        <div class="card-txt">
+          <div class="kicker">Since 2014</div>
+          <div class="name">Adopt-a-Park <span class="zh">公园养护</span></div>
+          <div class="blurb">Juanita Woodlands and other King County parks.</div>
+          <div class="blurb-zh">Juanita Woodlands 及金郡其他公园。</div>
+        </div>
+      </div>
     </a>
 
     <a class="card" href="community-service-service-projects.html">
-      <div class="kicker">Family-initiated</div>
-      <div class="name">Service Projects <span class="zh">服务项目</span></div>
-      <div class="blurb">Shelter blankets, bike recycling, meals, food forest.</div>
-      <div class="blurb-zh">猫毯、自行车回收、爱心餐与社区菜园。</div>
+      <div class="card-row">
+        <img class="card-av" src="avatars/generic.png" alt="">
+        <div class="card-txt">
+          <div class="kicker">Family-initiated</div>
+          <div class="name">Service Projects <span class="zh">服务项目</span></div>
+          <div class="blurb">Shelter blankets, bike recycling, meals, food forest.</div>
+          <div class="blurb-zh">猫毯、自行车回收、爱心餐与社区菜园。</div>
+        </div>
+      </div>
     </a>
+</div>
+<div class="past-head">Past programmes &nbsp;&#24050;&#32467;&#26463;&#30340;&#39033;&#30446;</div>
+<div class="past-sub">No longer running, kept here so the history stays findable. &#36825;&#20123;&#39033;&#30446;&#24050;&#32467;&#26463;&#65292;&#20445;&#30041;&#20110;&#27492;&#20197;&#20415;&#26597;&#38405;&#12290;</div>
+<div class="past-list">
+<a class="past-item" href="community-service-empactful-connections.html"><img src="avatars/generic.png" alt=""><span class="n">EmPactful Connections</span> <span class="z">特殊儿童陪伴</span></a>
 </div>
 <div class="btns"><a class="btn btn-ghost" href="index.html">&larr; Back to Who We Are</a></div>
 <div class="foot">Prototype for emeraldparents.org &middot; generated from taxonomy.json &middot; photos and videos are placeholders</div>

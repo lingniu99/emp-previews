@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Writing &amp; Creative Arts — EmP prototype</title>
+<title>Writing — EmP prototype</title>
 <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
 <style>
 /* Prototype stylesheet for the layered Who We Are pages.
@@ -83,9 +83,42 @@ h3{
 .card .name .zh{font-family:Catamaran,sans-serif; font-weight:600; font-size:15px; color:#5b6b78}
 .card .blurb{font-size:14px; line-height:1.55; color:#5b6b78; margin:0}
 .card .blurb-zh{font-size:13.5px; line-height:1.6; color:#5b6b78; margin:5px 0 0}
-.card .count{
-  display:inline-block; margin-top:10px; font-size:12px; font-weight:600;
-  color:#5b6b78; background:#f3f7f9; border-radius:999px; padding:3px 10px;
+/* the mascot avatar sits beside the card's words */
+.card-row{display:flex; gap:14px; align-items:flex-start}
+.card-av{
+  flex:0 0 auto; width:62px; height:62px; border-radius:50%;
+  background:#f3f7f9; border:1px solid #e3ebef; padding:4px;
+  object-fit:contain; object-position:center;
+}
+.card-txt{min-width:0}
+
+/* retired programmes: findable, deliberately quiet */
+.past-head{
+  font-family:Montserrat,sans-serif; font-weight:700; font-size:12px;
+  letter-spacing:.9px; text-transform:uppercase; color:#5b6b78;
+  margin:46px 0 0; padding-top:20px; border-top:1px solid #e3ebef;
+}
+.past-sub{font-size:13.5px; color:#5b6b78; margin:3px 0 14px}
+.past-list{display:flex; flex-wrap:wrap; gap:10px}
+.past-item{
+  display:inline-flex; align-items:center; gap:9px; text-decoration:none;
+  border:1px solid #e3ebef; border-radius:999px; padding:5px 15px 5px 6px;
+  background:#fff; color:#5b6b78;
+}
+.past-item:hover{border-color:#5b6b78; color:#0e4361}
+.past-item img{
+  width:30px; height:30px; border-radius:50%; background:#f3f7f9;
+  object-fit:contain; padding:2px; filter:grayscale(1); opacity:.75;
+}
+.past-item .n{font-family:Montserrat,sans-serif; font-weight:700; font-size:13.5px}
+.past-item .z{font-size:13px}
+
+/* banner at the top of a retired programme's own page */
+.ended{
+  display:inline-block; background:#f3f7f9; border:1px solid #e3ebef;
+  border-radius:999px; padding:5px 15px; margin:0 0 18px;
+  font-family:Montserrat,sans-serif; font-weight:700; font-size:12.5px;
+  letter-spacing:.4px; color:#5b6b78;
 }
 
 /* --- source / archive link ---------------------------------------- */
@@ -168,62 +201,13 @@ h3{
 <body>
 <div class="draft">DRAFT PROTOTYPE — not live. 草稿，尚未发布。</div>
 <div class="wrap">
-<div class="crumbs"><a href="index.html">Who We Are</a><span>&rsaquo;</span><a href="youth-leadership.html">Youth Leadership</a><span>&rsaquo;</span>Writing &amp; Creative Arts</div>
-<h1>Writing &amp; Creative Arts <span class="zh">写作与才艺</span></h1>
-<div class="lede">Two clubs where the members make the work and run the club themselves.<br>两个由青少年自己创作、自己运营的社团。</div>
-<div class="block">
-<h2>Youth Review <span class="zh">青少年评论</span></h2>
+<div class="crumbs"><a href="index.html">Who We Are</a><span>&rsaquo;</span><a href="youth-leadership.html">Youth Leadership</a><span>&rsaquo;</span>Writing</div>
+<h1>Writing <span class="zh">写作</span></h1>
 
 <div class="body">A youth writing and art publication with 28 series to date, plus writing contests with cash prizes. Submissions come from elementary through high school, and the editorial work is done by student volunteers.</div>
 <div class="body-zh">青少年写作与艺术刊物，已发表28个系列，并举办有奖征文。投稿来自小学到高中各年龄段，编辑工作全部由学生义工完成。</div>
 
 <div><a class="source" href="https://www.emeraldparents.org/youthreview" target="_blank" rel="noopener">See the full archive</a></div>
-<div class="media" style="margin-top:26px">
-
-      <!-- IMAGE 1 — IN WEEBLY this whole grid becomes ONE "Gallery" element:
-           drag Gallery onto the page, click Upload Images, add as many photos
-           as you like and caption each one. Volunteers can then add or remove
-           photos without touching any code. -->
-      <div class="ph ph-img">
-        <div class="ph-mark">IMAGE 1</div>
-        <div class="ph-hint">drop a photo here</div>
-        <div class="ph-cap">caption 图说</div>
-      </div>
-
-      <!-- IMAGE 2 — IN WEEBLY this whole grid becomes ONE "Gallery" element:
-           drag Gallery onto the page, click Upload Images, add as many photos
-           as you like and caption each one. Volunteers can then add or remove
-           photos without touching any code. -->
-      <div class="ph ph-img">
-        <div class="ph-mark">IMAGE 2</div>
-        <div class="ph-hint">drop a photo here</div>
-        <div class="ph-cap">caption 图说</div>
-      </div>
-
-      <!-- IMAGE 3 — IN WEEBLY this whole grid becomes ONE "Gallery" element:
-           drag Gallery onto the page, click Upload Images, add as many photos
-           as you like and caption each one. Volunteers can then add or remove
-           photos without touching any code. -->
-      <div class="ph ph-img">
-        <div class="ph-mark">IMAGE 3</div>
-        <div class="ph-hint">drop a photo here</div>
-        <div class="ph-cap">caption 图说</div>
-      </div>
-</div>
-</div>
-<div class="block">
-<h2>Youth Dance &amp; Instrument Club <span class="zh">舞蹈与器乐社</span></h2>
-<div class="note"><strong>Still to add:</strong> New page. The dance half below is drawn from the current weekly-activities announcement.</div>
-<div class="body">EmP 舞蹈社 runs a Saturday morning workshop series taught by EmP teenagers — ballet, K-pop, jazz and modern, and Chinese dance, for ages four and up. Sessions are small, no experience is needed, and the aim is to help a child find the style that suits them before committing to outside classes.</div>
-<div class="body-zh">EmP舞蹈社每周六上午开设体验系列课程，由协会青少年小老师授课，涵盖芭蕾、K-pop、爵士与现代舞、中国舞，适合4岁以上。小班教学、零基础即可参加，目的是帮助孩子在报名校外课程前找到适合自己的舞种。</div>
-
-    <!-- TEXT TO BE WRITTEN — replace this whole <div class="ph ph-text"> with
-         <div class="body">English copy</div><div class="body-zh">中文</div> -->
-    <div class="ph ph-text">
-      <div class="ph-mark">TEXT TO COME</div>
-      <div class="ph-hint">Instrument group 器乐社 — write a short description here. Who leads it, how often it meets, what ages, and what the group actually does.</div>
-    </div>
-<div><a class="source" href="https://www.emeraldparents.org/emp-activities.html" target="_blank" rel="noopener">Current schedule on EmP Weekly Activities</a></div>
 <div class="media" style="margin-top:26px">
 
       <!-- IMAGE 1 — IN WEEBLY this whole grid becomes ONE "Gallery" element:
@@ -265,23 +249,6 @@ h3{
         <div class="ph-hint">drop a photo here</div>
         <div class="ph-cap">caption 图说</div>
       </div>
-
-      <!-- VIDEO 1 — IN WEEBLY use the "YouTube" element (Build sidebar ->
-           Multimedia). Drag it here and paste the video link into Video URL.
-           Available on every Weebly plan; no embed code needed. -->
-      <div class="ph ph-vid">
-        <div class="ph-mark">&#9654; VIDEO 1</div>
-        <div class="ph-hint">paste a YouTube or Vimeo link here</div>
-      </div>
-
-      <!-- VIDEO 2 — IN WEEBLY use the "YouTube" element (Build sidebar ->
-           Multimedia). Drag it here and paste the video link into Video URL.
-           Available on every Weebly plan; no embed code needed. -->
-      <div class="ph ph-vid">
-        <div class="ph-mark">&#9654; VIDEO 2</div>
-        <div class="ph-hint">paste a YouTube or Vimeo link here</div>
-      </div>
-</div>
 </div>
 <div class="btns"><a class="btn btn-ghost" href="youth-leadership.html">&larr; Back to Youth Leadership</a></div>
 <div class="foot">Prototype for emeraldparents.org &middot; generated from taxonomy.json &middot; photos and videos are placeholders</div>
