@@ -96,8 +96,9 @@ h3{
 .card .name .zh{font-family:Catamaran,sans-serif; font-weight:600; font-size:15px; color:#5b6b78}
 .card .blurb{font-size:14px; line-height:1.55; color:#5b6b78; margin:0}
 .card .blurb-zh{font-size:13.5px; line-height:1.6; color:#5b6b78; margin:5px 0 0}
-/* the mascot avatar sits beside the card's words */
-.card-row{display:flex; gap:14px; align-items:flex-start}
+/* avatar sits beside the kicker and title; the description then runs the
+   full width of the card underneath, rather than in a narrow column */
+.card-head{display:flex; gap:14px; align-items:center; margin:0 0 10px}
 .card-av{
   flex:0 0 auto; width:62px; height:62px; border-radius:50%;
   background:#f3f7f9; border:1px solid #e3ebef; padding:4px;
@@ -220,51 +221,51 @@ h3{
 <div class="cards">
 
     <a class="card" href="youth-leadership-hackfest.html">
-      <div class="card-row">
+      <div class="card-head">
         <img class="card-av" src="avatars/generic.png" alt="">
         <div class="card-txt">
           <div class="kicker">11 events since 2021</div>
           <div class="name">HackFest <span class="zh">黑客节</span></div>
-          <div class="blurb">Twice-yearly hackathon with its own website.</div>
-          <div class="blurb-zh">每年两届，已有独立网站的黑客松。</div>
         </div>
       </div>
+      <div class="blurb">Twice-yearly hackathon with its own website.</div>
+      <div class="blurb-zh">每年两届，已有独立网站的黑客松。</div>
     </a>
 
     <a class="card" href="youth-leadership-camps-classes.html">
-      <div class="card-row">
+      <div class="card-head">
         <img class="card-av" src="avatars/generic.png" alt="">
         <div class="card-txt">
           <div class="kicker">Teens teaching kids</div>
           <div class="name">Camps &amp; Classes <span class="zh">夏令营与课程</span></div>
-          <div class="blurb">Summer camps designed and taught by EmP teenagers.</div>
-          <div class="blurb-zh">由协会青少年自己设计并教学的夏令营。</div>
         </div>
       </div>
+      <div class="blurb">Summer camps designed and taught by EmP teenagers.</div>
+      <div class="blurb-zh">由协会青少年自己设计并教学的夏令营。</div>
     </a>
 
     <a class="card" href="youth-leadership-writing.html">
-      <div class="card-row">
+      <div class="card-head">
         <img class="card-av" src="avatars/generic.png" alt="">
         <div class="card-txt">
           <div class="kicker">Youth Review</div>
           <div class="name">Writing <span class="zh">写作</span></div>
-          <div class="blurb">A youth writing and art publication, edited by students.</div>
-          <div class="blurb-zh">由学生自己编辑的青少年写作与艺术刊物。</div>
         </div>
       </div>
+      <div class="blurb">A youth writing and art publication, edited by students.</div>
+      <div class="blurb-zh">由学生自己编辑的青少年写作与艺术刊物。</div>
     </a>
 
     <a class="card" href="youth-leadership-creative-arts.html">
-      <div class="card-row">
+      <div class="card-head">
         <img class="card-av" src="avatars/generic.png" alt="">
         <div class="card-txt">
           <div class="kicker">Dance &amp; instruments</div>
           <div class="name">Creative Arts <span class="zh">才艺</span></div>
-          <div class="blurb">The dance club, taught by EmP teenagers, plus instruments.</div>
-          <div class="blurb-zh">由协会青少年授课的舞蹈社，以及器乐社。</div>
         </div>
       </div>
+      <div class="blurb">The dance club, taught by EmP teenagers, plus instruments.</div>
+      <div class="blurb-zh">由协会青少年授课的舞蹈社，以及器乐社。</div>
     </a>
 </div>
 <div class="past-head">Past programmes &nbsp;&#24050;&#32467;&#26463;&#30340;&#39033;&#30446;</div>

@@ -96,8 +96,9 @@ h3{
 .card .name .zh{font-family:Catamaran,sans-serif; font-weight:600; font-size:15px; color:#5b6b78}
 .card .blurb{font-size:14px; line-height:1.55; color:#5b6b78; margin:0}
 .card .blurb-zh{font-size:13.5px; line-height:1.6; color:#5b6b78; margin:5px 0 0}
-/* the mascot avatar sits beside the card's words */
-.card-row{display:flex; gap:14px; align-items:flex-start}
+/* avatar sits beside the kicker and title; the description then runs the
+   full width of the card underneath, rather than in a narrow column */
+.card-head{display:flex; gap:14px; align-items:center; margin:0 0 10px}
 .card-av{
   flex:0 0 auto; width:62px; height:62px; border-radius:50%;
   background:#f3f7f9; border:1px solid #e3ebef; padding:4px;
@@ -220,75 +221,75 @@ h3{
 <div class="cards">
 
     <a class="card" href="culture-celebration-track-and-field.html">
-      <div class="card-row">
+      <div class="card-head">
         <img class="card-av" src="avatars/track.png" alt="">
         <div class="card-txt">
           <div class="kicker">Every June</div>
           <div class="name">Summer Track &amp; Field Meet <span class="zh">家庭运动会</span></div>
-          <div class="blurb">Our biggest day of the year — 400+ people, every age.</div>
-          <div class="blurb-zh">一年中最盛大的一天：四百余人，老少同场。</div>
         </div>
       </div>
+      <div class="blurb">Our biggest day of the year — 400+ people, every age.</div>
+      <div class="blurb-zh">一年中最盛大的一天：四百余人，老少同场。</div>
     </a>
 
     <a class="card" href="culture-celebration-spring-festival.html">
-      <div class="card-row">
+      <div class="card-head">
         <img class="card-av" src="avatars/generic.png" alt="">
         <div class="card-txt">
           <div class="kicker">Lunar New Year</div>
           <div class="name">Spring Festival <span class="zh">春节</span></div>
-          <div class="blurb">Performances, a shared meal, the whole community together.</div>
-          <div class="blurb-zh">演出、年夜饭，全社区齐聚一堂。</div>
         </div>
       </div>
+      <div class="blurb">Performances, a shared meal, the whole community together.</div>
+      <div class="blurb-zh">演出、年夜饭，全社区齐聚一堂。</div>
     </a>
 
     <a class="card" href="culture-celebration-family-traditions.html">
-      <div class="card-row">
+      <div class="card-head">
         <img class="card-av" src="avatars/graduation.png" alt="">
         <div class="card-txt">
           <div class="kicker">Year after year</div>
           <div class="name">Family Traditions <span class="zh">家庭传统</span></div>
-          <div class="blurb">Group camping and the graduation celebration.</div>
-          <div class="blurb-zh">集体露营与毕业庆祝。</div>
         </div>
       </div>
+      <div class="blurb">Group camping and the graduation celebration.</div>
+      <div class="blurb-zh">集体露营与毕业庆祝。</div>
     </a>
 
     <a class="card" href="culture-celebration-kids-seasonal.html">
-      <div class="card-row">
+      <div class="card-head">
         <img class="card-av" src="avatars/halloween.png" alt="">
         <div class="card-txt">
           <div class="kicker">Through the year</div>
           <div class="name">Kids&#x27; Seasonal Fun <span class="zh">儿童活动</span></div>
-          <div class="blurb">Halloween, Christmas crafts and game nights.</div>
-          <div class="blurb-zh">万圣节、圣诞手工与游戏之夜。</div>
         </div>
       </div>
+      <div class="blurb">Halloween, Christmas crafts and game nights.</div>
+      <div class="blurb-zh">万圣节、圣诞手工与游戏之夜。</div>
     </a>
 
     <a class="card" href="culture-celebration-parents-social.html">
-      <div class="card-row">
+      <div class="card-head">
         <img class="card-av" src="avatars/mothers-day.png" alt="">
         <div class="card-txt">
           <div class="kicker">For the grown-ups</div>
           <div class="name">Parents&#x27; Social Life <span class="zh">家长联谊</span></div>
-          <div class="blurb">Mom&#x27;s Out, Dad&#x27;s Out, and the Empty Nesters group.</div>
-          <div class="blurb-zh">Mom&#x27;s Out、Dad&#x27;s Out 与空巢群。</div>
         </div>
       </div>
+      <div class="blurb">Mom&#x27;s Out, Dad&#x27;s Out, and the Empty Nesters group.</div>
+      <div class="blurb-zh">Mom&#x27;s Out、Dad&#x27;s Out 与空巢群。</div>
     </a>
 
     <a class="card" href="culture-celebration-jingxing.html">
-      <div class="card-row">
+      <div class="card-head">
         <img class="card-av" src="avatars/generic.png" alt="">
         <div class="card-txt">
           <div class="kicker">Cultural Discovery</div>
           <div class="name">景行 Jingxing <span class="zh">文化探索</span></div>
-          <div class="blurb">Student writing, essay contests and the 二十四节气 series.</div>
-          <div class="blurb-zh">学生写作、征文比赛与二十四节气系列。</div>
         </div>
       </div>
+      <div class="blurb">Student writing, essay contests and the 二十四节气 series.</div>
+      <div class="blurb-zh">学生写作、征文比赛与二十四节气系列。</div>
     </a>
 </div>
 <div class="btns"><a class="btn btn-ghost" href="index.html">&larr; Back to Who We Are</a></div>

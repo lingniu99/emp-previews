@@ -96,8 +96,9 @@ h3{
 .card .name .zh{font-family:Catamaran,sans-serif; font-weight:600; font-size:15px; color:#5b6b78}
 .card .blurb{font-size:14px; line-height:1.55; color:#5b6b78; margin:0}
 .card .blurb-zh{font-size:13.5px; line-height:1.6; color:#5b6b78; margin:5px 0 0}
-/* the mascot avatar sits beside the card's words */
-.card-row{display:flex; gap:14px; align-items:flex-start}
+/* avatar sits beside the kicker and title; the description then runs the
+   full width of the card underneath, rather than in a narrow column */
+.card-head{display:flex; gap:14px; align-items:center; margin:0 0 10px}
 .card-av{
   flex:0 0 auto; width:62px; height:62px; border-radius:50%;
   background:#f3f7f9; border:1px solid #e3ebef; padding:4px;
@@ -220,27 +221,27 @@ h3{
 <div class="cards">
 
     <a class="card" href="learning-enrichment-parent-talks.html">
-      <div class="card-row">
+      <div class="card-head">
         <img class="card-av" src="avatars/generic.png" alt="">
         <div class="card-txt">
           <div class="kicker">Running now</div>
           <div class="name">Parent Education Talks <span class="zh">家长讲座</span></div>
-          <div class="blurb">Parents teaching parents — admissions, safety, and practical life.</div>
-          <div class="blurb-zh">家长教家长：升学、安全与生活实用话题。</div>
         </div>
       </div>
+      <div class="blurb">Parents teaching parents — admissions, safety, and practical life.</div>
+      <div class="blurb-zh">家长教家长：升学、安全与生活实用话题。</div>
     </a>
 
     <a class="card" href="learning-enrichment-study-groups.html">
-      <div class="card-row">
+      <div class="card-head">
         <img class="card-av" src="avatars/generic.png" alt="">
         <div class="card-txt">
           <div class="kicker">Running now</div>
           <div class="name">Study Groups <span class="zh">学习小组</span></div>
-          <div class="blurb">Raz-Kids reading and the K–5 Math Challenge.</div>
-          <div class="blurb-zh">Raz-Kids 阅读与 K–5 数学挑战。</div>
         </div>
       </div>
+      <div class="blurb">Raz-Kids reading and the K–5 Math Challenge.</div>
+      <div class="blurb-zh">Raz-Kids 阅读与 K–5 数学挑战。</div>
     </a>
 </div>
 <div class="btns"><a class="btn btn-ghost" href="index.html">&larr; Back to Who We Are</a></div>
