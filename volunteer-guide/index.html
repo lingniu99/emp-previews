@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adding Photos &amp; Videos — EmP</title>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0; background:#fff; color:#1f2933;
+  font-family:"Catamaran",-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:16px; line-height:1.65;
+}
+.wrap{max-width:760px; margin:0 auto; padding:34px 20px 80px}
+a{color:#0e4361}
+
+h1{
+  font-family:Montserrat,sans-serif; font-weight:700; font-size:32px;
+  line-height:1.15; letter-spacing:-.5px; color:#0e4361; margin:0 0 4px;
+}
+h1 .zh{font-family:Catamaran,sans-serif; font-size:20px; font-weight:600; color:#5b6b78; letter-spacing:0}
+h2{
+  font-family:Montserrat,sans-serif; font-weight:700; font-size:20px;
+  color:#0e4361; margin:46px 0 2px; padding-top:22px; border-top:1px solid #e3ebef;
+}
+h2 .zh{font-family:Catamaran,sans-serif; font-size:16px; font-weight:600; color:#5b6b78}
+h2:first-of-type{border-top:none; padding-top:0}
+.lede{font-size:17px; color:#5b6b78; margin:0 0 8px}
+.zh-line{color:#33414d; margin:0 0 26px}
+
+ol{padding-left:0; margin:18px 0 0; list-style:none; counter-reset:step}
+ol li{
+  counter-increment:step; position:relative; padding:0 0 0 44px; margin:0 0 18px;
+}
+ol li::before{
+  content:counter(step); position:absolute; left:0; top:1px;
+  width:28px; height:28px; border-radius:50%; background:#0e4361; color:#fff;
+  font-family:Montserrat,sans-serif; font-weight:700; font-size:14px;
+  display:flex; align-items:center; justify-content:center;
+}
+ol li .zh{display:block; color:#33414d; font-size:15px; margin-top:2px}
+b{color:#0e4361}
+
+.kbd{
+  display:inline-block; background:#f3f7f9; border:1px solid #d6e2e9;
+  border-radius:6px; padding:1px 7px; font-family:Montserrat,sans-serif;
+  font-weight:600; font-size:13.5px; color:#0e4361;
+}
+.callout{
+  border-left:3px solid #386b30; background:#f1f7ef; border-radius:0 10px 10px 0;
+  padding:14px 18px; margin:22px 0;
+}
+.callout .t{font-family:Montserrat,sans-serif; font-weight:700; font-size:14px; color:#2f5c28; margin-bottom:3px}
+.callout .zh{display:block; color:#3c5238; margin-top:3px}
+.warn{border-left-color:#b45309; background:#fdf6ec}
+.warn .t{color:#8a5a12}
+.warn .zh{color:#6b4a13}
+ul.plain{margin:14px 0 0; padding-left:20px}
+ul.plain li{margin:0 0 12px}
+ul.plain li .zh{display:block; color:#33414d; font-size:15px}
+.foot{margin-top:56px; padding-top:18px; border-top:1px solid #e3ebef; font-size:13.5px; color:#5b6b78}
+@media (max-width:520px){h1{font-size:26px} .wrap{padding:24px 16px 60px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Adding photos and videos <span class="zh">如何添加照片和视频</span></h1>
+<p class="lede">You do not need to know any code. Everything happens in the Weebly
+editor, which works like a word processor — you drag things onto the page and type.</p>
+<p class="zh-line">完全不需要任何编程知识。所有操作都在 Weebly 编辑器里完成，它的用法就像
+文字处理软件：把元素拖到页面上，然后直接输入。</p>
+
+<div class="callout">
+  <div class="t">Nothing you do is live until you click Publish.</div>
+  You can click around, try things, and change your mind. The website only
+  changes at the moment you press the Publish button.
+  <span class="zh">在你点击「Publish 发布」之前，网站不会有任何改变。可以放心尝试。</span>
+</div>
+
+<h2>Before you start <span class="zh">开始之前</span></h2>
+<ul class="plain">
+  <li><b>You need an invitation.</b> An EmP admin sends it from the site's
+    Settings &rarr; Editors. You will get an email with a link — open that link
+    and set a password.
+    <span class="zh">你需要一封邀请邮件。管理员从网站的 Settings → Editors 发送，
+    你会收到带链接的邮件，打开后设置密码即可。</span></li>
+  <li><b>Photos straight from a phone are fine.</b> No need to resize or edit
+    anything first. Avoid uploading RAW camera files.
+    <span class="zh">手机拍的照片直接用就可以，不需要先修改尺寸。请不要上传相机的 RAW 原始文件。</span></li>
+  <li><b>Pick your best photos, not all of them.</b> Eight to fifteen good
+    photos tell the story better than eighty.
+    <span class="zh">挑选最好的照片，不必全部上传。八到十五张精选照片，比八十张更能讲好故事。</span></li>
+</ul>
+
+<h2>Adding photos <span class="zh">添加照片</span></h2>
+<ol>
+  <li>Open the page you want to update and click <span class="kbd">Edit</span>.
+    <span class="zh">打开要更新的页面，点击 Edit（编辑）。</span></li>
+  <li>Find the block of photos on the page and <b>click it once</b>. This is a
+    Gallery — one element that holds all the photos for that activity.
+    <span class="zh">找到页面上的照片区域，单击一次。这是一个「Gallery 图库」元素，
+    该活动的所有照片都放在里面。</span></li>
+  <li>Click <span class="kbd">Upload Images</span> in the toolbar that appears.
+    <span class="zh">在弹出的工具栏中点击 Upload Images（上传图片）。</span></li>
+  <li>Choose the photos from your computer. You can select many at once by
+    holding <span class="kbd">Shift</span> while clicking.
+    <span class="zh">从电脑中选择照片。按住 Shift 键可一次选中多张。</span></li>
+  <li>Wait for the upload to finish. The photos appear in the gallery and the
+    layout arranges itself — you do not have to line anything up.
+    <span class="zh">等待上传完成。照片会自动排列，无需手动调整版式。</span></li>
+  <li>Click <span class="kbd">Publish</span> at the top right.
+    <span class="zh">点击右上角的 Publish（发布）。</span></li>
+</ol>
+
+<h2>Writing captions <span class="zh">添加图片说明</span></h2>
+<ol>
+  <li>Click the gallery, then click the single photo you want to caption.
+    <span class="zh">点击图库，再点击想要添加说明的那张照片。</span></li>
+  <li>Type into the <b>Caption</b> field on the right.
+    <span class="zh">在右侧的 Caption（说明）栏中输入文字。</span></li>
+  <li>Keep it short: what is happening, and when. Both languages if you can —
+    for example &ldquo;Tug-of-war, June 2026 拔河比赛，2026年6月&rdquo;.
+    <span class="zh">尽量简短：写清楚是什么活动、什么时间。可以的话中英文都写，
+    例如「Tug-of-war, June 2026 拔河比赛，2026年6月」。</span></li>
+</ol>
+
+<h2>Reordering and removing <span class="zh">调整顺序与删除</span></h2>
+<ul class="plain">
+  <li><b>To reorder:</b> drag a photo to a new position inside the gallery.
+    Put the strongest photo first — it is the one most people will see.
+    <span class="zh">调整顺序：在图库内拖动照片即可。把最好的一张放在最前面，
+    因为多数人只会看到它。</span></li>
+  <li><b>To remove:</b> click the photo, then the delete icon. This only removes
+    it from the web page; the original on your own computer is untouched.
+    <span class="zh">删除：点击照片后点删除图标。这只会从网页上移除，
+    你电脑里的原图不受影响。</span></li>
+</ul>
+
+<h2>Adding a video <span class="zh">添加视频</span></h2>
+<ol>
+  <li>Put the video on YouTube first. If you do not want it to show up in
+    search results, set it to <b>Unlisted</b> — anyone with the link can still
+    watch it.
+    <span class="zh">先把视频上传到 YouTube。如果不希望被搜索到，
+    可设为 Unlisted（不公开列出）——有链接的人仍然可以观看。</span></li>
+  <li>Copy the video's link from your browser's address bar.
+    <span class="zh">从浏览器地址栏复制视频链接。</span></li>
+  <li>In the Weebly editor, look in the left sidebar under <b>Multimedia</b> and
+    drag the <span class="kbd">YouTube</span> element onto the page, below the
+    photos.
+    <span class="zh">在 Weebly 编辑器左侧栏的 Multimedia（多媒体）中，
+    把 YouTube 元素拖到页面上、照片的下方。</span></li>
+  <li>Paste the link into the <b>Video URL</b> box.
+    <span class="zh">把链接粘贴到 Video URL 栏中。</span></li>
+  <li>Click <span class="kbd">Publish</span>.
+    <span class="zh">点击 Publish（发布）。</span></li>
+</ol>
+
+<h2>Please do not change <span class="zh">请勿改动</span></h2>
+<div class="callout warn">
+  <div class="t">Three things on these pages are built in code.</div>
+  The coloured <b>card blocks</b>, the <b>page names</b>, and the <b>menu</b>.
+  If one of those looks wrong, tell an admin rather than editing it — a small
+  change there can break the links between pages.
+  <span class="zh">页面上有三样东西是用代码搭建的：彩色卡片区块、页面名称、导航菜单。
+  如果发现问题，请告诉管理员，不要自行修改——改动可能会破坏页面之间的链接。</span>
+</div>
+
+<h2>If something goes wrong <span class="zh">出错了怎么办</span></h2>
+<ul class="plain">
+  <li><b>Before you published:</b> nothing happened. Close the editor without
+    publishing and the live site stays exactly as it was.
+    <span class="zh">如果还没发布：什么都没有发生。直接关闭编辑器，网站保持原样。</span></li>
+  <li><b>After you published:</b> tell an admin straight away, and say what you
+    were doing. Do not try to fix it by deleting things — that usually makes it
+    harder to put back.
+    <span class="zh">如果已经发布：请立即告诉管理员，并说明你当时的操作。
+    不要试图通过删除来修复，那通常会更难恢复。</span></li>
+</ul>
+
+<div class="foot">Emerald Parents Association &middot; questions to the EmP board</div>
+
+</div>
+</body>
+</html>
