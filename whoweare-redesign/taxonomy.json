@@ -9,7 +9,8 @@
     "for copy that still has to be written.",
     "'avatar' = a file in avatars/. Unassigned programmes use generic.png.",
     "'status': 'past' moves a programme out of the main grid into the quiet 'Past programmes' list at the foot of its category page.",
-    "'page.mascots' = the avatars in the banner row. Four fits a phone; more will shrink them."
+    "'page.mascots' = the avatars in the banner row. Four fits a phone; more will shrink them.",
+    "'page.proclamation' = the King County honour shown under the intro."
   ],
   "page": {
     "title": "Who We Are",
@@ -21,7 +22,14 @@
       "track.png",
       "graduation.png",
       "halloween.png"
-    ]
+    ],
+    "proclamation": {
+      "label": "King County Proclamation",
+      "label_zh": "金县褒奖",
+      "text": "In 2025, King County proclaimed February 1 Emerald Parents Association Day.",
+      "highlight": "Emerald Parents Association Day",
+      "text_zh": "2025年，金县正式命名2月1日为「Emerald Parents Association Day」。"
+    }
   },
   "categories": [
     {
@@ -163,9 +171,9 @@
           "title_zh": "公园养护",
           "kicker": "Since 2014",
           "summary": "Juanita Woodlands and other King County parks.",
-          "summary_zh": "Juanita Woodlands 及金郡其他公园。",
+          "summary_zh": "Juanita Woodlands 及金县其他公园。",
           "description": "EmP families adopted Juanita Woodlands in 2014 and maintained it through 2023; we now work in other King County parks as well. Work parties run several times a year — clearing invasive plants, spreading mulch and planting. Younger children are welcome and the hours count toward school service requirements.",
-          "description_zh": "协会家庭于2014年认养 Juanita Woodlands 并维护至2023年，如今也在金郡其他公园服务。每年举办数次劳动日：清除入侵植物、铺覆盖物与种植。欢迎低龄儿童参加，服务时数可计入学校要求。",
+          "description_zh": "协会家庭于2014年认养 Juanita Woodlands 并维护至2023年，如今也在金县其他公园服务。每年举办数次劳动日：清除入侵植物、铺覆盖物与种植。欢迎低龄儿童参加，服务时数可计入学校要求。",
           "source": "https://www.emeraldparents.org/adopt-a-park.html",
           "images": 4,
           "videos": 0,
