@@ -77,13 +77,12 @@
           "kicker": "11 events since 2021",
           "summary": "Twice-yearly hackathon with its own website.",
           "summary_zh": "每年两届，已有独立网站的黑客松。",
-          "description": "Eleven hackathons since January 2021, now held twice a year. Youth teams build a project around a theme and present it to judges; the most recent, SafeHack, ran at DigiPen in September 2026. HackFest has outgrown this site — schedules, rules, registration and past projects all live on its own website.",
-          "description_zh": "自2021年1月起已举办十一届，目前每年两次。青少年组队围绕主题开发项目并向评委展示；最近一届 SafeHack 于2026年9月在 DigiPen 举行。黑客节已发展出自己独立的网站，赛程、规则、报名与历届作品都在那里。",
+          "description": "Eleven hackathons since January 2021, now held twice a year. Youth teams build a project around a theme and present it to judges; the most recent, SafeHack, ran at DigiPen in September 2026. The teams are formed and mentored by EmP youth, and the event has grown large enough to keep its own site for schedules, rules and registration.",
+          "description_zh": "自2021年1月起已举办十一届，目前每年两次。青少年组队围绕主题开发项目并向评委展示；最近一届 SafeHack 于2026年9月在 DigiPen 举行。参赛队伍由协会青少年自己组建与指导；活动规模已大到拥有独立网站，用于发布赛程、规则与报名。",
           "source": "https://www.emphackfest.org/",
-          "source_label": "Visit emphackfest.org",
-          "cta": true,
-          "images": 0,
-          "videos": 0,
+          "source_label": "Schedules, rules and registration on emphackfest.org",
+          "images": 4,
+          "videos": 1,
           "avatar": "generic.png"
         },
         {
