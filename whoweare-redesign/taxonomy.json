@@ -8,14 +8,20 @@
     "'note' = an amber flag on the page; 'todo' = a dashed box standing in",
     "for copy that still has to be written.",
     "'avatar' = a file in avatars/. Unassigned programmes use generic.png.",
-    "'status': 'past' moves a programme out of the main grid into the quiet 'Past programmes' list at the foot of its category page."
+    "'status': 'past' moves a programme out of the main grid into the quiet 'Past programmes' list at the foot of its category page.",
+    "'page.mascots' = the avatars in the banner row. Four fits a phone; more will shrink them."
   ],
   "page": {
     "title": "Who We Are",
     "title_zh": "了解我们",
     "intro": "A grassroots parenting community since 2007, run entirely by volunteer families. Everything below is something our members organise themselves.",
     "intro_zh": "自2007年起的民间父母社区，完全由义工家庭运营。以下每一项活动，都由会员自己组织。",
-    "mascot": "https://www.emeraldparents.org/uploads/5/5/5/1/55510023/mascot-1line-narrow-small_orig.jpeg"
+    "mascots": [
+      "usa-flag.png",
+      "track.png",
+      "graduation.png",
+      "halloween.png"
+    ]
   },
   "categories": [
     {
