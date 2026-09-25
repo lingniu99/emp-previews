@@ -54,9 +54,22 @@ h3{
 .body{max-width:70ch; margin:0 0 14px}
 .body-zh{max-width:70ch; margin:0 0 18px; color:#33414d}
 
-/* --- mascot strip ------------------------------------------------- */
-.mascots{margin:0 0 30px; overflow-x:auto; -webkit-overflow-scrolling:touch}
-.mascots img{display:block; width:100%; min-width:660px; height:auto}
+/* --- banner mascots ----------------------------------------------- */
+/* separate figures in a row, so they shrink to fit a phone instead of
+   forcing the sideways scroll the old 4.6:1 strip needed */
+.mascots{
+  display:flex; justify-content:center; align-items:flex-end;
+  gap:26px; margin:0 0 32px; padding:0;
+}
+.mascots img{flex:0 1 auto; height:128px; width:auto; object-fit:contain}
+@media (max-width:560px){
+  .mascots{gap:10px}
+  .mascots img{height:92px}
+}
+@media (max-width:380px){
+  .mascots{gap:6px}
+  .mascots img{height:76px}
+}
 
 /* --- cards -------------------------------------------------------- */
 .cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px}
