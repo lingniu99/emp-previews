@@ -256,28 +256,14 @@
           "avatar": "graduation.png"
         },
         {
-          "slug": "jingxing",
-          "title": "景行 Jingxing",
-          "title_zh": "文化探索",
-          "kicker": "Cultural Discovery",
-          "summary": "Exploring Chinese culture through students' own writing.",
-          "summary_zh": "以学生自己的写作探索中华文化。",
-          "description": "The Jingxing Cultural Discovery Program invites students to explore Chinese culture through their own writing. It runs essay contests, publishes the students' work, and is edited by a team of youth volunteers — so the culture is discovered by the children rather than explained to them.",
-          "description_zh": "景行文化探索项目邀请学生以自己的写作探索中华文化。项目举办征文比赛、发表学生作品，并由青少年编辑团队负责编辑——文化由孩子自己去发现，而不是被讲授。",
-          "source": "https://www.emeraldparents.org/2622334892-jingxing-cultural-discovery-program.html",
-          "images": 4,
-          "videos": 0,
-          "avatar": "generic.png"
-        },
-        {
           "slug": "kids-seasonal",
           "title": "Kids' Seasonal Fun",
           "title_zh": "儿童活动",
           "kicker": "Through the year",
-          "summary": "Halloween, Christmas crafts, game nights, 节气.",
-          "summary_zh": "万圣节、圣诞手工、游戏之夜与节气系列。",
-          "description": "Activities built around the calendar for younger children: Halloween on the Hill with the Bellevue Police Department, Christmas crafts, game nights, and a series following the twenty-four 节气 solar terms. Most are short, indoor and easy to bring a small child to.",
-          "description_zh": "跟着节令走的低龄儿童活动：与贝尔维尤警局合办的 Halloween on the Hill、圣诞手工、游戏之夜，以及二十四节气系列。多数活动时间短、在室内进行，带小小孩也很轻松。",
+          "summary": "Halloween, Christmas crafts and game nights.",
+          "summary_zh": "万圣节、圣诞手工与游戏之夜。",
+          "description": "Activities built around the calendar for younger children: Halloween on the Hill with the Bellevue Police Department, Christmas crafts and game nights. Most are short, indoor and easy to bring a small child to.",
+          "description_zh": "跟着节令走的低龄儿童活动：与贝尔维尤警局合办的 Halloween on the Hill、圣诞手工与游戏之夜。多数活动时间短、在室内进行，带小小孩也很轻松。",
           "source": "https://www.emeraldparents.org/kids-fun.html",
           "images": 4,
           "videos": 0,
@@ -296,6 +282,20 @@
           "images": 4,
           "videos": 0,
           "avatar": "mothers-day.png"
+        },
+        {
+          "slug": "jingxing",
+          "title": "景行 Jingxing",
+          "title_zh": "文化探索",
+          "kicker": "Cultural Discovery",
+          "summary": "Student writing, essay contests and the 二十四节气 series.",
+          "summary_zh": "学生写作、征文比赛与二十四节气系列。",
+          "description": "The Jingxing Cultural Discovery Program invites students to explore Chinese culture through their own writing. It runs essay contests, publishes the students' work, and is edited by a team of youth volunteers. Its longest-running thread follows the twenty-four 节气 solar terms — the food, the customs and the writing that belong to each one.",
+          "description_zh": "景行文化探索项目邀请学生以自己的写作探索中华文化。项目举办征文比赛、发表学生作品，并由青少年编辑团队负责编辑。其中延续最久的系列，是跟着二十四节气走的专题——每个节气的饮食、习俗与相关写作。",
+          "source": "https://www.emeraldparents.org/2622334892-jingxing-cultural-discovery-program.html",
+          "images": 4,
+          "videos": 0,
+          "avatar": "generic.png"
         }
       ]
     }
