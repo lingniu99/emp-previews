@@ -327,5 +327,13 @@
         "style": "ghost"
       }
     ]
+  },
+  "weebly": {
+    "_note": "Harvested from the published zz-avatars page 2026-09-25. Weebly appends _orig to the filename. Used to turn avatars/x.png into an absolute URL when generating the Embed Code blocks.",
+    "avatar_base": "https://www.emeraldparents.org/uploads/5/5/5/1/55510023/",
+    "avatar_suffix": "_orig",
+    "pages": {
+      "track-and-field": "https://www.emeraldparents.org/summer-track--field-meet.html"
+    }
   }
 }

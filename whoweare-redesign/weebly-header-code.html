@@ -1,0 +1,47 @@
+<!-- ============================================================
+     PARKED 2026-09-25 — NOT IN USE. DO NOT PASTE.
+
+     The board decided against visible gallery captions: Weebly can
+     only draw a caption ON TOP of the photo (both overlay styles
+     cover the picture), and there is no caption-below-image option.
+     Galleries are set to "Lightbox Only" instead.
+
+     Kept because the finding below is real and this block is the
+     fix if captions are ever reinstated.
+     ------------------------------------------------------------
+     EmP site-wide CSS
+     Paste into Weebly: Settings -> SEO -> Header Code
+     (applies to every page, so it only ever needs pasting ONCE)
+
+     Verified on the live site 2026-09-25 by injecting it into
+     summer-track--field-meet.html and reading the computed styles.
+
+     WHY: Weebly's gallery caption is white text on a 20%-black tint
+     that only darkens to 60% on :hover. Phones have no hover, so on
+     mobile the caption was permanently unreadable. This makes the
+     band a solid EmP teal at all times, hover or not.
+
+     SAFE TO ADD: no existing page on the site has gallery caption
+     text (checked across the whole mirror), so nothing currently
+     visible changes.
+     ============================================================ -->
+<style>
+/* caption band — EmP teal instead of black, same in every state */
+.imageGallery .galleryImageHolder .partialImageGalleryCaption .galleryCaptionHolderInnerBg,
+.imageGallery .galleryImageHolder .fullImageGalleryCaption .galleryCaptionHolderInnerBg,
+.imageGallery .galleryImageHolder:hover .galleryCaptionHolderInnerBg{
+  background: rgba(14,67,97,.88) !important;
+  opacity: 1 !important;
+}
+
+/* caption text — sans, so it separates from the Lora body copy.
+   Catamaran is already loaded by the theme (verified). */
+.galleryCaptionInnerText{
+  color: #fff !important;
+  font-family: Catamaran, "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  white-space: normal !important;   /* let bilingual captions wrap */
+}
+.galleryCaptionInnerTextHolder{ padding: 7px 10px !important; }
+</style>
