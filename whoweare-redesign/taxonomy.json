@@ -47,12 +47,12 @@
           "kicker": "Running now",
           "summary": "Parents teaching parents — admissions, safety, and practical life.",
           "summary_zh": "家长教家长：升学、安全与生活实用话题。",
-          "description": "Parents teaching parents. Around twenty talks so far, covering college and high-school admissions, personal safety with the Bellevue Police Department, and practical life topics such as home renovation, recycling and family travel. Talks are usually given by a member who knows the subject first-hand.",
-          "description_zh": "由家长主讲、为家长而办的讲座。迄今已举办约二十场，内容涵盖升学申请、与贝尔维尤警局合作的安全讲座，以及装修、回收、家庭旅行等生活实用话题。主讲人通常是亲身了解该主题的会员。",
+          "description": "Parents teaching parents. Several dozens of talks so far, covering college and high-school admissions, personal safety with the Bellevue Police Department, and practical life topics such as home renovation, recycling and family travel. Talks are usually given by a member who knows the subject first-hand.",
+          "description_zh": "由家长主讲、为家长而办的讲座。迄今已举办几十场，内容涵盖升学申请、与贝尔维尤警局合作的安全讲座，以及装修、回收、家庭旅行等生活实用话题。主讲人通常是亲身了解该主题的会员。",
           "source": "https://www.emeraldparents.org/parents-education.html",
           "images": 4,
           "videos": 1,
-          "avatar": "generic.png"
+          "avatar": "public-safety.png"
         },
         {
           "slug": "study-groups",
@@ -66,7 +66,7 @@
           "source": "https://www.emeraldparents.org/study-groups.html",
           "images": 4,
           "videos": 1,
-          "avatar": "generic.png"
+          "avatar": "reading-club.png"
         }
       ]
     },
@@ -128,10 +128,8 @@
           "kicker": "Dance & instruments",
           "summary": "The dance club, taught by EmP teenagers, plus instruments.",
           "summary_zh": "由协会青少年授课的舞蹈社，以及器乐社。",
-          "note": "New page. The dance half below is drawn from the current weekly-activities announcement.",
-          "description": "EmP 舞蹈社 runs a Saturday morning workshop series taught by EmP teenagers — ballet, K-pop, jazz and modern, and Chinese dance, for ages four and up. Sessions are small, no experience is needed, and the aim is to help a child find the style that suits them before committing to outside classes.",
-          "description_zh": "EmP舞蹈社每周六上午开设体验系列课程，由协会青少年小老师授课，涵盖芭蕾、K-pop、爵士与现代舞、中国舞，适合4岁以上。小班教学、零基础即可参加，目的是帮助孩子在报名校外课程前找到适合自己的舞种。",
-          "todo": "Instrument group 器乐社 — write a short description here. Who leads it, how often it meets, what ages, and what the group actually does.",
+          "description": "EmP dance club runs a Saturday morning workshop series taught by EmP teenagers — ballet, K-pop, jazz and modern, and Chinese dance, for ages four and up. Sessions are small, no experience is needed, and the aim is to help a child find the style that suits them before committing to outside classes. Coming soon — instrument club.",
+          "description_zh": "EmP舞蹈社每周六上午开设体验系列课程，由协会青少年小老师授课，涵盖芭蕾、K-pop、爵士与现代舞、中国舞，适合4岁以上。小班教学、零基础即可参加，目的是帮助孩子在报名校外课程前找到适合自己的舞种。器乐社信息马上就到。",
           "source": "https://www.emeraldparents.org/emp-activities.html",
           "source_label": "Current schedule on EmP Weekly Activities",
           "images": 4,
@@ -166,20 +164,6 @@
       "intro_zh": "我们回馈大西雅图社区的方式：公园、邻里，以及需要帮助的家庭。",
       "subcategories": [
         {
-          "slug": "adopt-a-park",
-          "title": "Adopt-a-Park",
-          "title_zh": "公园养护",
-          "kicker": "Since 2014",
-          "summary": "Juanita Woodlands and other King County parks.",
-          "summary_zh": "Juanita Woodlands 及金县其他公园。",
-          "description": "EmP families adopted Juanita Woodlands in 2014 and maintained it through 2023; we now work in other King County parks as well. Work parties run several times a year — clearing invasive plants, spreading mulch and planting. Younger children are welcome and the hours count toward school service requirements.",
-          "description_zh": "协会家庭于2014年认养 Juanita Woodlands 并维护至2023年，如今也在金县其他公园服务。每年举办数次劳动日：清除入侵植物、铺覆盖物与种植。欢迎低龄儿童参加，服务时数可计入学校要求。",
-          "source": "https://www.emeraldparents.org/adopt-a-park.html",
-          "images": 4,
-          "videos": 0,
-          "avatar": "generic.png"
-        },
-        {
           "slug": "service-projects",
           "title": "Service Projects",
           "title_zh": "服务项目",
@@ -192,6 +176,21 @@
           "images": 4,
           "videos": 1,
           "avatar": "generic.png"
+        },
+        {
+          "slug": "adopt-a-park",
+          "title": "Adopt-a-Park",
+          "title_zh": "公园养护",
+          "kicker": "Since 2014",
+          "summary": "Juanita Woodlands and other King County parks.",
+          "summary_zh": "Juanita Woodlands 及金县其他公园。",
+          "description": "EmP families adopted Juanita Woodlands in 2014 and maintained it through 2023, and we also worked in other King County parks. Work parties ran several times a year — clearing invasive plants, spreading mulch and planting. Younger children were welcome and the hours counted toward school service requirements. The programme is no longer running.",
+          "description_zh": "协会家庭于2014年认养 Juanita Woodlands 并维护至2023年。我们也在金县其他公园服务。每年举办数次劳动日：清除入侵植物、铺覆盖物与种植。欢迎低龄儿童参加，服务时数可计入学校要求。该项目现已结束。",
+          "source": "https://www.emeraldparents.org/adopt-a-park.html",
+          "images": 4,
+          "videos": 0,
+          "avatar": "adopt-a-park.png",
+          "status": "past"
         },
         {
           "slug": "empactful-connections",
@@ -284,7 +283,7 @@
           "summary": "Mom's Out, Dad's Out, and the Empty Nesters group.",
           "summary_zh": "Mom's Out、Dad's Out 与空巢群。",
           "description": "Time for the parents themselves. Mom's Out and Dad's Out meet through the year — hiking, ping-pong, classes, dinners — and the 空巢群 Empty Nesters group brings together families whose children have left home. Around twenty-five gatherings are on record.",
-          "description_zh": "属于家长自己的时间。Mom's Out 与 Dad's Out 全年不定期举行——爬山、乒乓、课程、聚餐；空巢群则让孩子离家的家庭重新聚在一起。已记录的聚会约有二十五次。",
+          "description_zh": "属于家长自己的时间。Mom's Out 与 Dad's Out 全年不定期举行——爬山、乒乓、课程、聚餐；空巢群则让孩子离家上学的家庭重新聚在一起，举办多个活动。",
           "source": "https://www.emeraldparents.org/parents-fun.html",
           "images": 4,
           "videos": 0,
@@ -302,7 +301,7 @@
           "source": "https://www.emeraldparents.org/2622334892-jingxing-cultural-discovery-program.html",
           "images": 4,
           "videos": 0,
-          "avatar": "generic.png"
+          "avatar": "jingxing.png"
         }
       ]
     }
@@ -333,7 +332,23 @@
     "avatar_base": "https://www.emeraldparents.org/uploads/5/5/5/1/55510023/",
     "avatar_suffix": "_orig",
     "pages": {
-      "track-and-field": "https://www.emeraldparents.org/summer-track--field-meet.html"
-    }
+      "parent-talks": "parent-education-talks",
+      "study-groups": "study-groups1",
+      "hackfest": "hackfest1",
+      "camps-classes": "camps--classes1",
+      "writing": "writing",
+      "creative-arts": "creative-arts",
+      "gavel-club": "gavel-club1",
+      "adopt-a-park": "adopt-a-park1",
+      "empactful-connections": "empactful-connections1",
+      "track-and-field": "summer-track--field-meet",
+      "spring-festival": "spring-festival",
+      "family-traditions": "family-traditions",
+      "kids-seasonal": "kids-seasonal-fun",
+      "parents-social": "parents-social-life",
+      "jingxing": "jingxing"
+    },
+    "page_base": "https://www.emeraldparents.org/",
+    "page_suffix": ".html"
   }
 }
