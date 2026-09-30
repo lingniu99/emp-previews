@@ -308,10 +308,13 @@
       "kids-seasonal": "kids-seasonal-fun",
       "parents-social": "parents-social-life",
       "jingxing": "jingxing",
-      "community-service": "community-service-2026"
+      "community-service": "community-service",
+      "learning-enrichment": "learning--enrichment",
+      "youth-leadership": "youth-leadership",
+      "culture-celebration": "culture--celebration"
     },
     "page_base": "https://www.emeraldparents.org/",
     "page_suffix": ".html",
-    "_pending": "community-service-2026 should be re-permalinked to 'community-service' to restore the URL that renaming broke; update this map when done."
+    "_pending": "The landing card for Community Service points at community-service.html, which serves the OLD page until the final cleanup re-permalinks community-service-2026 onto it. Harmless meanwhile: the landing is hidden too."
   }
 }
