@@ -10,7 +10,8 @@
     "'avatar' = a file in avatars/. Unassigned programmes use generic.png.",
     "'status': 'past' moves a programme out of the main grid into the quiet 'Past programmes' list at the foot of its category page.",
     "'page.mascots' = the avatars in the banner row. Four fits a phone; more will shrink them.",
-    "'page.proclamation' = the King County honour shown under the intro."
+    "'page.proclamation' = the King County honour shown under the intro.",
+    "A category with 'leaf': true has no subcategory cards — it is one page with a description and a gallery. Community Service works that way: the service work is one continuous body, not a set of separate programmes."
   ],
   "page": {
     "title": "Who We Are",
@@ -162,54 +163,13 @@
       "kicker": "Giving back",
       "intro": "How we give back to Greater Seattle — the parks, our neighbours, and families who need a hand.",
       "intro_zh": "我们回馈大西雅图社区的方式：公园、邻里，以及需要帮助的家庭。",
-      "subcategories": [
-        {
-          "slug": "service-projects",
-          "title": "Service Projects",
-          "title_zh": "服务项目",
-          "kicker": "Family-initiated",
-          "summary": "Shelter blankets, bike recycling, meals, food forest.",
-          "summary_zh": "猫毯、自行车回收、爱心餐与社区菜园。",
-          "description": "One-off and seasonal projects, chosen and led by the families who propose them: blankets for an animal shelter, bicycle recycling, cooking meals at the Ronald McDonald House, and work at the Beacon Hill Food Forest. Volunteer hours accumulate toward the President's Volunteer Service Award, which several of our youth members have received.",
-          "description_zh": "由提案家庭自主选择与带领的单次或季节性项目：为动物收容所制作猫毯、旧自行车回收、在麦当劳之家做饭，以及 Beacon Hill Food Forest 的园艺工作。义工时数可累计申请总统义工服务奖，协会已有多位青少年会员获奖。",
-          "source": "https://www.emeraldparents.org/community-service.html",
-          "images": 4,
-          "videos": 1,
-          "avatar": "generic.png"
-        },
-        {
-          "slug": "adopt-a-park",
-          "title": "Adopt-a-Park",
-          "title_zh": "公园养护",
-          "kicker": "Since 2014",
-          "summary": "Juanita Woodlands and other King County parks.",
-          "summary_zh": "Juanita Woodlands 及金县其他公园。",
-          "description": "EmP families adopted Juanita Woodlands in 2014 and maintained it through 2023, and we also worked in other King County parks. Work parties ran several times a year — clearing invasive plants, spreading mulch and planting. Younger children were welcome and the hours counted toward school service requirements. The programme is no longer running.",
-          "description_zh": "协会家庭于2014年认养 Juanita Woodlands 并维护至2023年。我们也在金县其他公园服务。每年举办数次劳动日：清除入侵植物、铺覆盖物与种植。欢迎低龄儿童参加，服务时数可计入学校要求。该项目现已结束。",
-          "source": "https://www.emeraldparents.org/adopt-a-park.html",
-          "images": 4,
-          "videos": 0,
-          "avatar": "adopt-a-park.png",
-          "status": "past"
-        },
-        {
-          "slug": "empactful-connections",
-          "title": "EmPactful Connections",
-          "title_zh": "特殊儿童陪伴",
-          "kicker": "Ongoing",
-          "summary": "Youth volunteers with the autism community.",
-          "summary_zh": "青少年义工长期陪伴自闭症群体。",
-          "description": "A partnership with International Buddy. EmP youth volunteers spent time with children in the autism community and helped them train for Special Olympics events. The programme is no longer running.",
-          "description_zh": "与 International Buddy 的合作项目。协会青少年义工陪伴自闭症儿童，并协助他们为特奥会做训练。该项目现已结束。",
-          "source": "https://www.emeraldparents.org/empactful-connections.html",
-          "images": 3,
-          "videos": 1,
-          "avatar": "generic.png",
-          "status": "past",
-          "note": "Which years did this run? The site does not record a start or end date.",
-          "note_label": "To confirm"
-        }
-      ]
+      "subcategories": [],
+      "leaf": true,
+      "body": "Service has been part of EmP from the beginning, and it takes whatever shape the people in front of us need. For a decade we adopted Juanita Woodlands — clearing invasive plants, spreading mulch, planting through the seasons — and worked in other King County parks alongside it. Our youth volunteers spent years with International Buddy, keeping company with children in the autism community and helping them train for Special Olympics events. Around those long commitments run the smaller projects families propose themselves: blankets for an animal shelter, bicycle recycling, meals cooked at the Ronald McDonald House, planting at the Beacon Hill Food Forest. Volunteer hours accumulate toward the President's Volunteer Service Award, which several of our young members have received.",
+      "body_zh": "服务从一开始就是协会的一部分，形式则随眼前的需要而变。我们曾连续十年认养 Juanita Woodlands——清除入侵植物、铺覆盖物、四季种植——同时也在金县其他公园服务。青少年义工与 International Buddy 长期合作，陪伴自闭症儿童，并协助他们为特奥会训练。在这些长期承诺之外，还有家庭自己发起的小型项目：为动物收容所制作猫毯、旧自行车回收、在麦当劳之家做饭、在 Beacon Hill Food Forest 种植。义工时数可累计申请总统义工服务奖，协会已有多位青少年会员获奖。",
+      "source": "https://www.emeraldparents.org/community-service.html",
+      "images": 6,
+      "videos": 1
     },
     {
       "slug": "culture-celebration",
