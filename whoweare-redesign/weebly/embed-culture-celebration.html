@@ -11,7 +11,7 @@
    #wsite-content rule outranks any class we could write here. */
 .empc-wrap{font-family:Catamaran,-apple-system,'Segoe UI',Roboto,sans-serif;margin:0;padding:0}
 .empc-wrap *{box-sizing:border-box}
-.empc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin:0;padding:0}
+.empc-grid{display:grid;gap:16px;margin:0;padding:0}
 .empc-card{
   display:block !important;background:#fff !important;border:1px solid #e3ebef;
   border-radius:14px;padding:18px 20px;text-decoration:none !important;
@@ -48,6 +48,11 @@
   width:30px;height:30px;border-radius:50%;background:#f3f7f9;
   object-fit:contain;padding:2px;filter:grayscale(1);opacity:.75;
 }
+</style>
+<style>
+.empc-grid{grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){.empc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.empc-grid{grid-template-columns:1fr}}
 </style>
 <div class="empc-wrap">
   <div class="empc-grid">

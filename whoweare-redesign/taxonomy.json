@@ -12,7 +12,8 @@
     "'page.mascots' = the avatars in the banner row. Four fits a phone; more will shrink them.",
     "'page.proclamation' = the King County honour shown under the intro.",
     "A category with 'leaf': true has no subcategory cards — it is one page with a description and a gallery. Community Service works that way: the service work is one continuous body, not a set of separate programmes.",
-    "'avatar_zoom' scales an avatar inside its clipped circle, for art that was uploaded with wide margins instead of cropped square."
+    "'avatar_zoom' scales an avatar inside its clipped circle, for art that was uploaded with wide margins instead of cropped square.",
+    "'columns' fixes how many cards a category shows per row on desktop; it steps down to 2 then 1 on narrower screens."
   ],
   "page": {
     "title": "Who We Are",
@@ -70,7 +71,8 @@
           "videos": 1,
           "avatar": "math-challenge.png"
         }
-      ]
+      ],
+      "columns": 2
     },
     {
       "slug": "youth-leadership",
@@ -156,7 +158,8 @@
           "note_label": "To confirm",
           "avatar": "generic.png"
         }
-      ]
+      ],
+      "columns": 2
     },
     {
       "slug": "community-service",
@@ -267,7 +270,8 @@
           "videos": 0,
           "avatar": "jingxing.png"
         }
-      ]
+      ],
+      "columns": 3
     }
   ],
   "extras": {
