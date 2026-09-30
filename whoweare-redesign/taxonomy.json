@@ -307,9 +307,11 @@
       "family-traditions": "family-traditions",
       "kids-seasonal": "kids-seasonal-fun",
       "parents-social": "parents-social-life",
-      "jingxing": "jingxing"
+      "jingxing": "jingxing",
+      "community-service": "community-service-2026"
     },
     "page_base": "https://www.emeraldparents.org/",
-    "page_suffix": ".html"
+    "page_suffix": ".html",
+    "_pending": "community-service-2026 should be re-permalinked to 'community-service' to restore the URL that renaming broke; update this map when done."
   }
 }
