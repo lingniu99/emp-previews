@@ -19,10 +19,12 @@
   box-shadow:0 12px 26px -18px rgba(14,67,97,.55);text-decoration:none !important;
 }
 .empc-head{display:flex;gap:14px;align-items:center;margin:0 0 10px}
-.empc-av{
+.empc-avwrap{
   flex:0 0 auto;width:62px;height:62px;border-radius:50%;background:#f3f7f9;
-  border:1px solid #e3ebef;padding:4px;object-fit:contain;
+  border:1px solid #e3ebef;overflow:hidden;display:flex;
+  align-items:center;justify-content:center;
 }
+.empc-av{width:100%;height:100%;object-fit:contain;padding:4px}
 .empc-txt{min-width:0}
 .empc-past{margin:46px 0 0;padding-top:20px;border-top:1px solid #e3ebef}
 .empc-pastlist{display:flex;flex-wrap:wrap;gap:10px}
@@ -32,6 +34,13 @@
   padding:5px 15px 5px 6px;background:#fff !important;
 }
 .empc-pastitem:hover{border-color:#5b6b78;text-decoration:none !important}
+.empc-back{margin:38px 0 0}
+.empc-backbtn{
+  display:inline-block !important;text-decoration:none !important;
+  padding:11px 20px;border-radius:10px;background:#fff !important;
+  border:2px solid #0e4361;
+}
+.empc-backbtn:hover{background:#f3f7f9 !important;text-decoration:none !important}
 .empc-pastitem img{
   width:30px;height:30px;border-radius:50%;background:#f3f7f9;
   object-fit:contain;padding:2px;filter:grayscale(1);opacity:.75;

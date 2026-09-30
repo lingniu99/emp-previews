@@ -11,7 +11,8 @@
     "'status': 'past' moves a programme out of the main grid into the quiet 'Past programmes' list at the foot of its category page.",
     "'page.mascots' = the avatars in the banner row. Four fits a phone; more will shrink them.",
     "'page.proclamation' = the King County honour shown under the intro.",
-    "A category with 'leaf': true has no subcategory cards — it is one page with a description and a gallery. Community Service works that way: the service work is one continuous body, not a set of separate programmes."
+    "A category with 'leaf': true has no subcategory cards — it is one page with a description and a gallery. Community Service works that way: the service work is one continuous body, not a set of separate programmes.",
+    "'avatar_zoom' scales an avatar inside its clipped circle, for art that was uploaded with wide margins instead of cropped square."
   ],
   "page": {
     "title": "Who We Are",
@@ -67,7 +68,7 @@
           "source": "https://www.emeraldparents.org/study-groups.html",
           "images": 4,
           "videos": 1,
-          "avatar": "reading-club.png"
+          "avatar": "math-challenge.png"
         }
       ]
     },
@@ -92,7 +93,8 @@
           "source_label": "Schedules, rules and registration on emphackfest.org",
           "images": 4,
           "videos": 1,
-          "avatar": "generic.png"
+          "avatar": "hackfest.jpg",
+          "avatar_zoom": 1.5
         },
         {
           "slug": "camps-classes",
@@ -120,7 +122,7 @@
           "source": "https://www.emeraldparents.org/youthreview",
           "images": 4,
           "videos": 0,
-          "avatar": "generic.png"
+          "avatar": "reading-club.png"
         },
         {
           "slug": "creative-arts",
@@ -206,7 +208,8 @@
           "source": "https://www.emeraldparents.org/family-fun.html",
           "images": 4,
           "videos": 1,
-          "avatar": "generic.png"
+          "avatar": "lunar-new-year.jpg",
+          "avatar_zoom": 1.3
         },
         {
           "slug": "family-traditions",
@@ -315,6 +318,6 @@
     },
     "page_base": "https://www.emeraldparents.org/",
     "page_suffix": ".html",
-    "_pending": "The landing card for Community Service points at community-service.html, which serves the OLD page until the final cleanup re-permalinks community-service-2026 onto it. Harmless meanwhile: the landing is hidden too."
+    "_pending": "Settled 2026-09-30: the merged page lives at community-service.html, so the original URL is preserved and nothing external breaks. community-service-2026 and -intermediate are gone; prior-2026 is hidden from the menu as a rollback."
   }
 }
