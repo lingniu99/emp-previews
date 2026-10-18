@@ -340,7 +340,7 @@
     "avatar_suffix": "_orig",
     "pages": {
       "parent-talks": "parent-education-talks",
-      "study-groups": "study-groups1",
+      "study-groups": "study-groups",
       "hackfest": "hackfest1",
       "camps-classes": "camps--classes1",
       "writing": "writing",
@@ -363,6 +363,6 @@
     },
     "page_base": "https://www.emeraldparents.org/",
     "page_suffix": ".html",
-    "_pending": "Settled 2026-09-30: the merged page lives at community-service.html, so the original URL is preserved and nothing external breaks. community-service-2026 and -intermediate are gone; prior-2026 is hidden from the menu as a rollback."
+    "_pending": "study-groups: the new page now owns the clean /study-groups.html and the old archive moved to study-groups1.html (2026-10-18)."
   }
 }
