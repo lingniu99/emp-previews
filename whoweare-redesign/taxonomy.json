@@ -341,11 +341,11 @@
     "pages": {
       "parent-talks": "parent-education-talks",
       "study-groups": "study-groups",
-      "hackfest": "hackfest1",
+      "hackfest": "hackfest",
       "camps-classes": "camps--classes1",
       "writing": "writing",
       "creative-arts": "creative-arts",
-      "gavel-club": "gavel-club1",
+      "gavel-club": "gavel-club",
       "adopt-a-park": "adopt-a-park1",
       "empactful-connections": "empactful-connections1",
       "track-and-field": "summer-track--field-meet",
@@ -363,6 +363,6 @@
     },
     "page_base": "https://www.emeraldparents.org/",
     "page_suffix": ".html",
-    "_pending": "Weebly refuses a double dash in a permalink, so the category lives at culture-celebration.html (single dash), not culture--celebration.html. study-groups: new page owns /study-groups.html, archive at study-groups1."
+    "_pending": "New pages took the clean URLs for study-groups, hackfest and gavel-club; the old archives moved to the -1 names. Culture lives at culture-celebration (single dash) because Weebly rejects a double dash."
   }
 }
