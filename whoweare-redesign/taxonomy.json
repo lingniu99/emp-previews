@@ -13,7 +13,8 @@
     "'page.proclamation' = the King County honour shown under the intro.",
     "A category with 'leaf': true has no subcategory cards — it is one page with a description and a gallery. Community Service works that way: the service work is one continuous body, not a set of separate programmes.",
     "'avatar_zoom' scales an avatar inside its clipped circle, for art that was uploaded with wide margins instead of cropped square.",
-    "'columns' fixes how many cards a category shows per row on desktop; it steps down to 2 then 1 on narrower screens."
+    "'columns' fixes how many cards a category shows per row on desktop; it steps down to 2 then 1 on narrower screens.",
+    "'page.columns' sets the landing grid; it was 2 for four categories, 3 for five."
   ],
   "page": {
     "title": "Who We Are",
@@ -32,7 +33,8 @@
       "text": "In 2025, King County proclaimed February 1 Emerald Parents Association Day.",
       "highlight": "Emerald Parents Association Day",
       "text_zh": "2025年，金县正式命名2月1日为「Emerald Parents Association Day」。"
-    }
+    },
+    "columns": 3
   },
   "categories": [
     {
@@ -166,40 +168,15 @@
       "title": "Community Service",
       "title_zh": "社区服务",
       "kicker": "Giving back",
-      "intro": "How we give back to Greater Seattle — the parks, our neighbours, families who need a hand — and the volunteers who make all of it happen.",
-      "intro_zh": "我们回馈大西雅图社区的方式：公园、邻里、需要帮助的家庭，以及让这一切成真的义工。",
-      "subcategories": [
-        {
-          "slug": "service-projects",
-          "title": "Service Projects",
-          "title_zh": "服务项目",
-          "kicker": "Since the beginning",
-          "summary": "Parks, neighbours, and the projects families propose themselves.",
-          "summary_zh": "公园、邻里，以及家庭自己发起的项目。",
-          "description": "Service has been part of EmP from the beginning, and it takes whatever shape the people in front of us need. For a decade we adopted Juanita Woodlands — clearing invasive plants, spreading mulch, planting through the seasons — and worked in other King County parks alongside it. Our youth volunteers spent years with International Buddy, keeping company with children in the autism community and helping them train for Special Olympics events. Around those long commitments run the smaller projects families propose themselves: blankets for an animal shelter, bicycle recycling, meals cooked at the Ronald McDonald House, planting at the Beacon Hill Food Forest.",
-          "description_zh": "服务从一开始就是协会的一部分，形式则随眼前的需要而变。我们曾连续十年认养 Juanita Woodlands——清除入侵植物、铺覆盖物、四季种植——同时也在金县其他公园服务。青少年义工与 International Buddy 长期合作，陪伴自闭症儿童，并协助他们为特奥会训练。在这些长期承诺之外，还有家庭自己发起的小型项目：为动物收容所制作猫毯、旧自行车回收、在麦当劳之家做饭、在 Beacon Hill Food Forest 种植。",
-          "avatar": "adopt-a-park.png",
-          "source": null,
-          "images": 0,
-          "videos": 0
-        },
-        {
-          "slug": "volunteer-appreciation",
-          "title": "Volunteer Appreciation",
-          "title_zh": "义工答谢",
-          "kicker": "Adult & youth",
-          "summary": "Parties and the PVSA ceremony, for the people the work rests on.",
-          "summary_zh": "答谢聚会与总统义工奖颁奖典礼，献给支撑这一切的人。",
-          "description": "The volunteers are what the service work is made of, so we stop and say so. EmP hosts appreciation events for adult and youth volunteers alike — gatherings, parties, and the President's Volunteer Service Award ceremony, where young members who have put in the hours are recognised in front of the whole community. The most recent were in March and November 2024.",
-          "description_zh": "服务工作是由义工撑起来的，所以我们会专门停下来致谢。协会为成人与青少年义工举办答谢活动——聚会、派对，以及总统义工服务奖颁奖典礼，让付出时间的青少年会员在全社区面前获得肯定。最近两次分别在2024年3月与11月举行。",
-          "note": "There is already an appreciation video on the old page — https://youtu.be/2wD9BKw1ITk — worth moving onto this page.",
-          "avatar": "generic.png",
-          "source": null,
-          "images": 4,
-          "videos": 1
-        }
-      ],
-      "columns": 2
+      "intro": "How we give back to Greater Seattle — the parks, our neighbours, and families who need a hand.",
+      "intro_zh": "我们回馈大西雅图社区的方式：公园、邻里，以及需要帮助的家庭。",
+      "subcategories": [],
+      "leaf": true,
+      "body": "Service has been part of EmP from the beginning, and it takes whatever shape the people in front of us need. For a decade we adopted Juanita Woodlands — clearing invasive plants, spreading mulch, planting through the seasons — and worked in other King County parks alongside it. Our youth volunteers spent years with International Buddy, keeping company with children in the autism community and helping them train for Special Olympics events. Around those long commitments run the smaller projects families propose themselves: blankets for an animal shelter, bicycle recycling, meals cooked at the Ronald McDonald House, planting at the Beacon Hill Food Forest.",
+      "body_zh": "服务从一开始就是协会的一部分，形式则随眼前的需要而变。我们曾连续十年认养 Juanita Woodlands——清除入侵植物、铺覆盖物、四季种植——同时也在金县其他公园服务。青少年义工与 International Buddy 长期合作，陪伴自闭症儿童，并协助他们为特奥会训练。在这些长期承诺之外，还有家庭自己发起的小型项目：为动物收容所制作猫毯、旧自行车回收、在麦当劳之家做饭、在 Beacon Hill Food Forest 种植。",
+      "source": null,
+      "images": 0,
+      "videos": 0
     },
     {
       "slug": "culture-celebration",
@@ -296,6 +273,22 @@
         }
       ],
       "columns": 3
+    },
+    {
+      "slug": "volunteer-appreciation",
+      "title": "Volunteer Appreciation",
+      "title_zh": "义工答谢",
+      "kicker": "The people behind it all",
+      "intro": "Everything on this page happens because someone volunteered, so we stop and say so — for adults and young people alike.",
+      "intro_zh": "这里的每一件事，都因为有人站出来当义工才得以发生，所以我们专门停下来致谢——成人与青少年同样如此。",
+      "leaf": true,
+      "body": "The volunteers are what the service work is made of, so we stop and say so. EmP hosts appreciation events for adult and youth volunteers alike — gatherings, parties, and the President's Volunteer Service Award ceremony, where young members who have put in the hours are recognised in front of the whole community. The most recent were in March and November 2024.",
+      "body_zh": "服务工作是由义工撑起来的，所以我们会专门停下来致谢。协会为成人与青少年义工举办答谢活动——聚会、派对，以及总统义工服务奖颁奖典礼，让付出时间的青少年会员在全社区面前获得肯定。最近两次分别在2024年3月与11月举行。",
+      "note": "There is already an appreciation video on the old page — https://youtu.be/2wD9BKw1ITk — worth moving onto this page.",
+      "source": null,
+      "images": 4,
+      "videos": 1,
+      "subcategories": []
     }
   ],
   "extras": {
@@ -343,7 +336,6 @@
       "learning-enrichment": "learning--enrichment",
       "youth-leadership": "youth-leadership",
       "culture-celebration": "culture--celebration",
-      "service-projects": "service-projects",
       "volunteer-appreciation": "volunteer-appreciation"
     },
     "page_base": "https://www.emeraldparents.org/",
