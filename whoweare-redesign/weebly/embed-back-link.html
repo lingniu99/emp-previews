@@ -1,10 +1,12 @@
 <!-- ============================================================
-     "Back to <category>" — paste this SAME block at the foot of every
-     programme page. Identical on all of them; it works out which page it
-     is on from the URL, so nothing needs editing per page.
+     "Back" — paste this SAME block at the foot of every page below the
+     top level. Identical everywhere; it works out its parent from the URL.
 
-     On a category-level page the fallback stands, which reads
-     "Back to Who We Are" — also correct.
+     The label never names the category, on purpose: it used to, and every
+     category rename then meant re-pasting this on every page.
+
+     On a top-level page the fallback stands and points at Who We Are,
+     which is correct for it.
 
      It renders as an EMPTY BOX in the Weebly editor, because the editor
      does not run scripts inside an Embed Code element. Judge it after
@@ -24,33 +26,31 @@
 .empb-link:hover{background:#f3f7f9 !important;text-decoration:none !important}
 </style>
 <div class="empb-wrap">
-  <a class="empb-link" href="https://www.emeraldparents.org/who-we-are.html">&larr; Back to Who We Are &nbsp;&#36820;&#22238;&#20102;&#35299;&#25105;&#20204;</a>
+  <a class="empb-link" href="https://www.emeraldparents.org/who-we-are.html">&larr; Back &nbsp;&#36820;&#22238;</a>
 </div>
 <script>
 (function () {
   var M = {
-    "camps--classes1":["youth-leadership","Youth-Led Projects","青少年主导项目"],
-    "creative-arts":["youth-leadership","Youth-Led Projects","青少年主导项目"],
-    "family-traditions":["culture--celebration","Sports, Culture &amp; Celebration","运动、文化与联谊"],
-    "gavel-club1":["youth-leadership","Youth-Led Projects","青少年主导项目"],
-    "hackfest1":["youth-leadership","Youth-Led Projects","青少年主导项目"],
-    "jingxing":["culture--celebration","Sports, Culture &amp; Celebration","运动、文化与联谊"],
-    "kids-seasonal-fun":["culture--celebration","Sports, Culture &amp; Celebration","运动、文化与联谊"],
-    "parent-education-talks":["learning--enrichment","Learning &amp; Enrichment","学习成长"],
-    "parents-social-life":["culture--celebration","Sports, Culture &amp; Celebration","运动、文化与联谊"],
-    "service-projects":["community-service","Community Service","社区服务"],
-    "spring-festival":["culture--celebration","Sports, Culture &amp; Celebration","运动、文化与联谊"],
-    "study-groups1":["learning--enrichment","Learning &amp; Enrichment","学习成长"],
-    "summer-track--field-meet":["culture--celebration","Sports, Culture &amp; Celebration","运动、文化与联谊"],
-    "writing":["youth-leadership","Youth-Led Projects","青少年主导项目"]
+    "camps--classes1":"youth-leadership",
+    "creative-arts":"youth-leadership",
+    "family-traditions":"culture--celebration",
+    "gavel-club1":"youth-leadership",
+    "hackfest1":"youth-leadership",
+    "jingxing":"culture--celebration",
+    "kids-seasonal-fun":"culture--celebration",
+    "parent-education-talks":"learning--enrichment",
+    "parents-social-life":"culture--celebration",
+    "service-projects":"community-service",
+    "spring-festival":"culture--celebration",
+    "study-groups1":"learning--enrichment",
+    "summer-track--field-meet":"culture--celebration",
+    "writing":"youth-leadership"
   };
   var slug = location.pathname.replace(/^\//, "").replace(/\.html$/, "");
-  var m = M[slug];
-  if (!m) return;
+  var parent = M[slug];
+  if (!parent) return;
   var links = document.querySelectorAll("a.empb-link");
   var a = links[links.length - 1];
-  if (!a) return;
-  a.href = "https://www.emeraldparents.org/" + m[0] + ".html";
-  a.innerHTML = "\u2190 Back to " + m[1] + " &nbsp;" + m[2];
+  if (a) a.href = "https://www.emeraldparents.org/" + parent + ".html";
 })();
 </script>
