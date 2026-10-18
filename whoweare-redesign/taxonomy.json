@@ -357,12 +357,12 @@
       "community-service": "community-service",
       "learning-enrichment": "learning--enrichment",
       "youth-leadership": "youth-leadership",
-      "culture-celebration": "culture--celebration",
+      "culture-celebration": "culture-celebration",
       "volunteer-appreciation": "volunteer-appreciation",
       "service-projects": "service-projects"
     },
     "page_base": "https://www.emeraldparents.org/",
     "page_suffix": ".html",
-    "_pending": "study-groups: the new page now owns the clean /study-groups.html and the old archive moved to study-groups1.html (2026-10-18)."
+    "_pending": "Weebly refuses a double dash in a permalink, so the category lives at culture-celebration.html (single dash), not culture--celebration.html. study-groups: new page owns /study-groups.html, archive at study-groups1."
   }
 }
