@@ -62,15 +62,18 @@ under-promises.
 
 ## Element 5 — Follow us
 
-> **Follow us 关注我们**
-> WeChat 微信公众号 — scan the code below
-> YouTube — EmP Media
-> Instagram — @emeraldparentsig
-> LinkedIn — Emerald Parents Association
-> 小红书 — EmeraldParents，也可搜「西雅图华人家长组织EmP」
+Visible text on the left, link target on the right. Type the visible text,
+then attach the URL with the editor's link tool — do not paste raw URLs into
+the page; they wrap badly on a phone and read as clutter.
 
-Link each name to its URL with the editor's link tool. Do not paste raw URLs:
-they wrap badly on a phone and read as clutter.
+| Visible text | Link to |
+|---|---|
+| **Follow us 关注我们** | *(heading, no link)* |
+| WeChat 微信公众号 — scan the code below | *(no link)* |
+| YouTube — EmP Media | https://www.youtube.com/@empmedia2750 |
+| Instagram — @emeraldparentsig | https://www.instagram.com/emeraldparentsig |
+| LinkedIn — Emerald Parents Association | https://www.linkedin.com/company/emerald-parents-association/ |
+| 小红书 — EmeraldParents，也可搜「西雅图华人家长组织EmP」 | https://www.xiaohongshu.com/user/profile/5fda9ccb000000000101f650 |
 
 ## Element 7 — Newsletter
 
@@ -78,7 +81,8 @@ they wrap badly on a phone and read as clutter.
 > weeks. Become a member to receive it.
 > 自2007年起发布，每两周发送给会员。欢迎加入成为会员以订阅。
 
-Link "Become a member" to join-us.html with Standard Page.
+Link "Become a member" to **join-us.html** using *Standard Page* in the link
+dialog, not by typing the address.
 
 ## Element 9 — EmP HackFest
 
@@ -86,3 +90,24 @@ Link "Become a member" to join-us.html with Standard Page.
 > emphackfest.org · Instagram @hackfest.emp · Discord
 >
 > EmP HackFest 设有独立的渠道，用于黑客松相关咨询。
+
+| Visible text | Link to |
+|---|---|
+| emphackfest.org | https://www.emphackfest.org/ |
+| Instagram @hackfest.emp | https://www.instagram.com/hackfest.emp |
+| Discord | https://discord.gg/zZBXUaKADD |
+
+## Every address on this page, in one place
+
+Email — information@emeraldparents.org · EmeraldYouthReview@emeraldparents.org
+· pvsa@emeraldparents.org
+
+Mail — PO Box 6381, Bellevue, WA 98008
+
+- YouTube https://www.youtube.com/@empmedia2750
+- Instagram https://www.instagram.com/emeraldparentsig
+- LinkedIn https://www.linkedin.com/company/emerald-parents-association/
+- 小红书 https://www.xiaohongshu.com/user/profile/5fda9ccb000000000101f650
+- HackFest https://www.emphackfest.org/
+- HackFest Instagram https://www.instagram.com/hackfest.emp
+- HackFest Discord https://discord.gg/zZBXUaKADD
